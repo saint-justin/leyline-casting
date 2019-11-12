@@ -13,4 +13,4 @@ Peter Vitello   - Developer at Large
 Wren Bernstein  - Art Lead
 
 ### Fair Use Notice
-This game contains copyrighted material the use of which has not been specifically authorized by the copyright owner. We are not the owners of any piece of the Dresden Files universe, characters, or any other piece of the world therein. The works being used are used in a purely educational manor.
+This game contains copyrighted material the use of which has not been specifically authorized by the copyright owner. We are not the owners of any piece of the Dresden Files universe, characters, or any other piece of the world therein. The works being used are used in a purely educational manor. Please don't sue us.
