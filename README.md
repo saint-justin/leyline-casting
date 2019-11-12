@@ -3,13 +3,18 @@ Play as Harry Dresden, a wizard from the mythical realm of Chicago, on a fishing
 
 ## Notes
 Single player game developed for Android.
+
 Unity v. 2019.1.10f1
 
 ## Development Team
 Andrew Schwartz - Lead Auxiliary Developer
+
 Justin Vaughn   - Team Lead, Developer at Large
+
 Kevin Kulp      - Lead Gameplay Architect  
+
 Peter Vitello   - Developer at Large
+
 Wren Bernstein  - Art Lead
 
 ### Fair Use Notice
