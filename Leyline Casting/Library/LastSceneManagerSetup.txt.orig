@@ -1,0 +1,9 @@
+sceneSetups:
+<<<<<<< HEAD
+- path: Assets/Scenes/JustinScene.unity
+=======
+- path: Assets/Scenes/andrew_file.unity
+>>>>>>> 02372aa7df7050cb37fb4ace9f9f76e03253fc2b
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0
