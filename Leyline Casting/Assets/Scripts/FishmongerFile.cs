@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using System.IO;
 
 [Serializable]
@@ -14,7 +15,17 @@ public class FileJSON
 
     // one of each fish type that has been caught and the heaviest of that type of fish caught
     // doesn't need to be in order, but reading this should account for that not every type of fish will have an entry
-    public List<Fish> biggestFishCaught; 
+    public List<Fish> biggestFishCaught;
+
+    public FileJSON()
+    {
+        varietyCatchNumber = 0;
+        deepestCatch = new Catch();
+        heaviestCatch = new Catch();
+        varietyCatch = new Catch();
+
+        biggestFishCaught = new List<Fish>();
+    }
 }
 
 [Serializable]
@@ -23,6 +34,13 @@ public class Catch
     public float weight; // total weight of fish in "fish"
     public float depth;
     public List<Fish> fish;
+
+    public Catch(float depth = 0.0f, float weight = 0.0f)
+    {
+        this.weight = weight;
+        this.depth = depth;
+        fish = new List<Fish>();
+    }
 }
 
 [Serializable]
@@ -30,6 +48,12 @@ public class Fish
 {
     public float weight;
     public FishType type;
+
+    public Fish(float weight = 0.0f, FishType type = FishType.Salmon)
+    {
+        this.weight = weight;
+        this.type = type;
+    }
 }
 
 public enum FishType
@@ -38,8 +62,8 @@ public enum FishType
     Cod,
     Trout,
     Fomor,
-    Type5,
-    Type6
+    Bass,
+    Perch
 }
 
 public class FishmongerFile : MonoBehaviour
@@ -55,7 +79,8 @@ public class FishmongerFile : MonoBehaviour
         //CreateTestFile();
 
         // uncomment this to read it back in
-        //ReadFishmongerFile();
+        ReadFishmongerFile();
+        UpdateDisplay();
 
         // you can use this or the property inspector for the script to see
         // if fishFile has been populated once ReadFishmongerFile is called
@@ -90,6 +115,66 @@ public class FishmongerFile : MonoBehaviour
         fishFile = JsonUtility.FromJson<FileJSON>(wholeText);
     }
 
+    void UpdateDisplay()
+    {
+        string wholeString = "";
+
+        // Deepest Catch
+        wholeString += $"Deepest Catch: {fishFile.deepestCatch.depth}ft\n\n";
+
+        // Heaviest Catch
+        wholeString += $"Heaviest Catch: {fishFile.heaviestCatch.weight}\n";
+        for(int i = 0; i < fishFile.heaviestCatch.fish.Count; ++i)
+        {
+            Fish currentFish = fishFile.heaviestCatch.fish[i];
+            wholeString += $"Fish {i}: {currentFish.type}, {currentFish.weight}lbs\n";
+        }
+        wholeString += "\n";
+
+        // Variety Catch
+        wholeString += $"Most Varieties of Fish Caught at Once: {fishFile.varietyCatchNumber}\n";
+        for (int i = 0; i < fishFile.varietyCatch.fish.Count; ++i)
+        {
+            Fish currentFish = fishFile.varietyCatch.fish[i];
+            wholeString += $"Fish {i}: {currentFish.type}\n";
+        }
+        wholeString += "\n";
+
+        // Fish types
+        wholeString += "Piscyclopedia: \n";
+        string[] fishTypes = Enum.GetNames(typeof(FishType));
+        for(int i = 0; i < fishFile.biggestFishCaught.Count; ++i)
+        {
+            fishTypes[(int)fishFile.biggestFishCaught[i].type] += $", Biggest catch: {fishFile.biggestFishCaught[i].weight}lbs\n";
+        }
+
+        for(int i = 0; i < fishTypes.Length; i++)
+        {
+            if (fishTypes[i].Contains(", Biggest catch:"))
+                wholeString += fishTypes[i];
+            else
+                wholeString += "????? \n";
+        }
+
+        wholeString += "\n";
+
+        // set text to wholeString
+        GetComponent<Text>().text = wholeString;
+    }
+
+
+    void WriteFishmongerFile()
+    {
+        // serialize to write
+        string json = JsonUtility.ToJson(fishFile);
+
+        string jsonPath = $"{FileIO.DirectoryAddress}fishmonger_file.json";
+
+        // write file
+        StreamWriter writeStream = new StreamWriter(jsonPath);
+        writeStream.Write(json);
+        writeStream.Close();
+    }
 
     // creates test json file for fishmonger file @ /fishmonger_file_test.json
     void CreateTestFile()
