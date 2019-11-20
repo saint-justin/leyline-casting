@@ -10,7 +10,7 @@ public class FishingRod : MonoBehaviour
     public LineDrawer fishingLine; // Draws the fishing rod line
     public Vector2 hookInactivePosition; // Reference to where the hook is when not casting
     public Vector2 hookPosition; // Current position of the hook
-    public Vector2 hookPrevPosition; // Reference to the previous position of the hook for collision detection
+    private Vector2 hookPrevPosition; // Reference to the previous position of the hook for collision detection
     public Vector2 hookVelocity; // Current velocity of the hook
 
     public float maxCastStrength; // Speed multiplier for the initial velocity of casting
@@ -19,16 +19,18 @@ public class FishingRod : MonoBehaviour
 
     // Variables for casting the hook
     public FishingState finiteState; // Finite state machine
-    public float castStrength; // Initial speed of the fishing rood cast
-    public Vector2 castAngle; // Angle that the fishing rod should be cast at
+    private float castStrength; // Initial speed of the fishing rood cast
+    private Vector2 castAngle; // Angle that the fishing rod should be cast at
     private float castTime; // Time counter used for calculating the exact location to position the hook over time
 
-    List<GameObject> oceanFish; // List of all fish in the sea that aren't on the fishing line
-    List<GameObject> hookedFish; // List of all fish attached to the hook
+    public List<GameObject> oceanFish; // List of all fish in the sea that aren't on the fishing line
+    private List<GameObject> hookedFish; // List of all fish attached to the hook
 
     // Start is called before the first frame update
     void Start()
     {
+        fishingLine = new LineDrawer(0.075f);
+
         hookInactivePosition = fishingHook.transform.position;
         hookPosition = hookInactivePosition;
         hookPrevPosition = hookPosition;
@@ -36,13 +38,14 @@ public class FishingRod : MonoBehaviour
 
         maxCastStrength = 3.0f;
         lineStrength = 1.0f;
-        hookRadius = 1.0f;
+        hookRadius = 2.0f;
 
         finiteState = FishingState.Inactive;
         castStrength = 0.0f;
         castAngle = new Vector2(0.0f, -1.0f);
         castTime = 0.0f;
-        fishingLine = new LineDrawer(0.075f);
+
+        hookedFish = new List<GameObject>();
     }
 
     // Update is called once per frame
@@ -75,12 +78,23 @@ public class FishingRod : MonoBehaviour
             case FishingState.Rising:
                 if (hookPosition.y > transform.position.y - 1.0f)
                 {
+                    foreach(GameObject fish in hookedFish)
+                    {
+                        Destroy(fish);
+                    }
+                    hookedFish.Clear();
+
                     hookPosition = hookInactivePosition;
                     finiteState = FishingState.Inactive;
                 }
                 else
                 {
                     hookPosition += hookVelocity * Time.deltaTime;
+                    HandleFishCollision();
+                    for(int i = 0; i < hookedFish.Count; i++)
+                    {
+                        hookedFish[i].transform.position = hookPosition + new Vector2(0.0f, -0.2f);
+                    }
                 }
                 break;
         }
@@ -111,5 +125,20 @@ public class FishingRod : MonoBehaviour
     private void DrawFishingLine()
     {
         fishingLine.DrawLineInGameView(transform.position, hookPosition, Color.white);
+    }
+
+    /// <summary>
+    /// Checks all unhooked fish to see if it's colliding with the fishing rod; if so, add it to the fishing rod list
+    /// </summary>
+    private void HandleFishCollision()
+    {
+        foreach (GameObject fish in oceanFish)
+        {
+            if(Vector2.Distance(fish.transform.position, new Vector2(hookPosition.x, hookPosition.y)) <= hookRadius)
+            {
+                hookedFish.Add(fish);
+                oceanFish.Remove(fish);
+            }
+        }
     }
 }
