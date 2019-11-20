@@ -1,9 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/Scenes/KevinScene.unity
-=======
-- path: Assets/Scenes/AndrewUIFile.unity
->>>>>>> ca57b0eeb0306ae665559613f7cd081132191022
   isLoaded: 1
   isActive: 1
   isSubScene: 0
