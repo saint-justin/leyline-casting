@@ -360,6 +360,85 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &353489390
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 353489392}
+  - component: {fileID: 353489391}
+  m_Layer: 0
+  m_Name: hook
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &353489391
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353489390}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 4e24003a458ec5d4db04e8458635c2d0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 5, y: 5}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &353489392
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353489390}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.85690665, z: -21.880753}
+  m_LocalScale: {x: 0.5096021, y: 0.4536905, z: 0.48192307}
+  m_Children: []
+  m_Father: {fileID: 1531757636}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -631,8 +710,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -16.411469, y: -0.9203568, z: 1}
   m_LocalScale: {x: 5.8797007, y: 4.844118, z: 9.961013}
-  m_Children:
-  - {fileID: 1531757636}
+  m_Children: []
   m_Father: {fileID: 718468814}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -708,7 +786,7 @@ SpriteRenderer:
   m_Sprite: {fileID: 21300000, guid: 9b1a56be5f2c6de4ea932e5c8362e493, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
-  m_FlipY: 0
+  m_FlipY: 1
   m_DrawMode: 0
   m_Size: {x: 2.35, y: 5.12}
   m_AdaptiveModeThreshold: 0.5
@@ -805,6 +883,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1531757636}
   - component: {fileID: 1531757637}
+  - component: {fileID: 1531757638}
   m_Layer: 0
   m_Name: fishing_pole
   m_TagString: Untagged
@@ -820,11 +899,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1531757635}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.87, y: 1.47, z: -1}
-  m_LocalScale: {x: 0.6085811, y: 0.83755296, z: 0.4060705}
-  m_Children: []
-  m_Father: {fileID: 759586773}
-  m_RootOrder: 0
+  m_LocalPosition: {x: -0.23, y: 3.89, z: 4.5403}
+  m_LocalScale: {x: 0.19623153, y: 0.22041461, z: 0.207502}
+  m_Children:
+  - {fileID: 353489392}
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1531757637
 SpriteRenderer:
@@ -874,6 +954,29 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1531757638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531757635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9f3b93683db3394999f70b6f343996c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fishingHook: {fileID: 353489390}
+  hookInactivePosition: {x: 0, y: 0}
+  hookPosition: {x: 0, y: 0}
+  hookPrevPosition: {x: 0, y: 0}
+  hookVelocity: {x: 0, y: 0}
+  maxCastStrength: 0
+  lineStrength: 0
+  hookRadius: 0
+  finiteState: 0
+  castStrength: 0
+  castAngle: {x: 0, y: 0}
 --- !u!1 &1804473945
 GameObject:
   m_ObjectHideFlags: 0
