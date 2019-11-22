@@ -1094,14 +1094,14 @@ MonoBehaviour:
   fishingHook: {fileID: 353489390}
   hookInactivePosition: {x: 0, y: 0}
   hookPosition: {x: 0, y: 0}
-  hookPrevPosition: {x: 0, y: 0}
   hookVelocity: {x: 0, y: 0}
   maxCastStrength: 0
   lineStrength: 0
-  hookRadius: 0
+  maxFishOnHook: 0
+  lureRadius: 0
   finiteState: 0
-  castStrength: 0
-  castAngle: {x: 0, y: 0}
+  oceanFish:
+  - {fileID: 551835145}
 --- !u!1 &1804473945
 GameObject:
   m_ObjectHideFlags: 0

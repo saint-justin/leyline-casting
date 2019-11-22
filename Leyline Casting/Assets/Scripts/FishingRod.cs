@@ -14,8 +14,9 @@ public class FishingRod : MonoBehaviour
     public Vector2 hookVelocity; // Current velocity of the hook
 
     public float maxCastStrength; // Speed multiplier for the initial velocity of casting
-    public float lineStrength; // Max weight that the line can support
-    public float hookRadius; // Distance from the hook that fish will attach to the line
+    public float lineStrength; // Max weight that the line can support, going over will break the line
+    public float maxFishOnHook; // Max number of fish that can fit on the rod, any more will break the line
+    public float lureRadius; // Distance from the hook that fish will attach to the line
 
     // Variables for casting the hook
     public FishingState finiteState; // Finite state machine
@@ -38,7 +39,8 @@ public class FishingRod : MonoBehaviour
 
         maxCastStrength = 3.0f;
         lineStrength = 1.0f;
-        hookRadius = 2.0f;
+        maxFishOnHook = 1;
+        lureRadius = 2.0f;
 
         finiteState = FishingState.Inactive;
         castStrength = 0.0f;
@@ -51,54 +53,7 @@ public class FishingRod : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        hookPrevPosition = hookPosition;
-
-        switch (finiteState)
-        {
-            case FishingState.Inactive:
-                // Finite state handled in CastLine(...)
-                break;
-            case FishingState.Casting:
-                if (hookVelocity.y >= 0.0f)
-                {
-                    hookVelocity = new Vector2(0.0f, 2.0f);
-                    finiteState = FishingState.Rising;
-                }
-                else
-                {
-                    if(hookPosition.y > transform.position.y - 2.0f)
-                    {
-                        hookVelocity += new Vector2(0.0f, -4.0f) * Time.deltaTime;
-                    }
-
-                    hookPosition += hookVelocity * Time.deltaTime;
-                    hookVelocity -= hookVelocity.normalized * 3.0f * Time.deltaTime; // Reduces velocity by 1.0 per second
-                }
-                break;
-            case FishingState.Rising:
-                if (hookPosition.y > transform.position.y - 1.0f)
-                {
-                    foreach(GameObject fish in hookedFish)
-                    {
-                        Destroy(fish);
-                    }
-                    hookedFish.Clear();
-
-                    hookPosition = hookInactivePosition;
-                    finiteState = FishingState.Inactive;
-                }
-                else
-                {
-                    hookPosition += hookVelocity * Time.deltaTime;
-                    HandleFishCollision();
-                    for(int i = 0; i < hookedFish.Count; i++)
-                    {
-                        hookedFish[i].transform.position = hookPosition + new Vector2(0.0f, -0.2f);
-                    }
-                }
-                break;
-        }
-        fishingHook.transform.position = hookPosition;
+        UpdateFishingHook();
         DrawFishingLine();
     }
 
@@ -119,6 +74,62 @@ public class FishingRod : MonoBehaviour
     }
 
     /// <summary>
+    /// Moves the fishing hook and updates the finite state of the fishing rod
+    /// </summary>
+    private void UpdateFishingHook()
+    {
+        hookPrevPosition = hookPosition;
+
+        switch (finiteState)
+        {
+            case FishingState.Inactive:
+                // Finite state handled in CastLine(...)
+                break;
+            case FishingState.Casting:
+                if (hookVelocity.y >= 0.0f)
+                {
+                    hookVelocity = new Vector2(0.0f, 2.0f);
+                    finiteState = FishingState.Rising;
+                }
+                else
+                {
+                    if (hookPosition.y > transform.position.y - 2.0f)
+                    {
+                        hookVelocity += new Vector2(0.0f, -4.0f) * Time.deltaTime;
+                    }
+
+                    hookPosition += hookVelocity * Time.deltaTime;
+                    hookVelocity -= hookVelocity.normalized * 3.0f * Time.deltaTime; // Reduces velocity by 1.0 per second
+                }
+                break;
+            case FishingState.Rising:
+                if (hookPosition.y > transform.position.y - 1.0f)
+                {
+                    foreach (GameObject fish in hookedFish)
+                    {
+                        Destroy(fish);
+                    }
+                    hookedFish.Clear();
+
+                    hookPosition = hookInactivePosition;
+                    finiteState = FishingState.Inactive;
+                }
+                else
+                {
+                    hookPosition += hookVelocity * Time.deltaTime;
+                    HandleFishCollision();
+                    for (int i = 0; i < hookedFish.Count; i++)
+                    {
+                        hookedFish[i].transform.position = hookPosition + new Vector2(0.0f, -0.2f);
+                    }
+                }
+                break;
+        }
+
+        fishingHook.transform.position = hookPosition;
+    }
+
+    /// <summary>
     /// Draws the line from the end of the fishing rod to the top of the fishing hook
     /// TODO: Replace with more complex code drawing a texture
     /// </summary>
@@ -134,11 +145,60 @@ public class FishingRod : MonoBehaviour
     {
         foreach (GameObject fish in oceanFish)
         {
-            if(Vector2.Distance(fish.transform.position, new Vector2(hookPosition.x, hookPosition.y)) <= hookRadius)
+            if(Vector2.Distance(fish.transform.position, new Vector2(hookPosition.x, hookPosition.y)) <= lureRadius)
             {
                 hookedFish.Add(fish);
                 oceanFish.Remove(fish);
+                if(hookedFish.Count > maxFishOnHook)
+                {
+                    LineBreak();
+                }
             }
         }
+    }
+
+    /// <summary>
+    /// Removes all fish from the hook and breaks the line
+    /// </summary>
+    private void LineBreak()
+    {
+        hookedFish.Clear();
+        // TODO: Visually break the fishing line
+    }
+
+    /// <summary>
+    /// Sets the maximum velocity of casting the fishing hook into the water
+    /// </summary>
+    /// <param name="newMaxCastStrength">Maximum velocity of casting the fishing hook into the water</param>
+    public void SetMaxCastStrength(float newMaxCastStrength)
+    {
+        maxCastStrength = newMaxCastStrength;
+    }
+
+    /// <summary>
+    /// Sets the maximum weight that the line can support before breaking
+    /// </summary>
+    /// <param name="newLineStrength">Maximum weight that the line can support before breaking</param>
+    public void SetLineStrength(float newLineStrength)
+    {
+        lineStrength = newLineStrength;
+    }
+
+    /// <summary>
+    /// Sets the maximum number of fish that can be hooked before the line breaks
+    /// </summary>
+    /// <param name="newMaxFishOnHook">Maximum number of fish that can be hooked</param>
+    public void SetMaxFishOnHook(int newMaxFishOnHook)
+    {
+        maxFishOnHook = newMaxFishOnHook;
+    }
+
+    /// <summary>
+    /// Sets the maximum seeking distance of fish around the fishing hook
+    /// </summary>
+    /// <param name="newLureRadius">Seeking distance of fish around the fishing hook</param>
+    public void SetLureRadius(float newLureRadius)
+    {
+        lureRadius = newLureRadius;
     }
 }

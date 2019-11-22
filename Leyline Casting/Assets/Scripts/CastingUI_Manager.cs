@@ -113,7 +113,7 @@ public class CastingUI_Manager : MonoBehaviour
 
             case fishingState.none:
                 // Checks if we need to start powering state
-                if (Input.GetMouseButtonDown(0))
+                if (fishingRod.finiteState == FishingState.Inactive && Input.GetMouseButtonDown(0))
                 {
                     currentState = fishingState.powering;
                     powerBarParent.GetComponent<SpriteRenderer>().enabled = true;
