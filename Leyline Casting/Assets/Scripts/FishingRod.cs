@@ -39,8 +39,8 @@ public class FishingRod : MonoBehaviour
 
         maxCastStrength = 3.0f;
         lineStrength = 1.0f;
-        maxFishOnHook = 1;
-        lureRadius = 2.0f;
+        maxFishOnHook = 10;
+        lureRadius = 1.00f;
 
         finiteState = FishingState.Inactive;
         castStrength = 0.0f;
@@ -143,12 +143,13 @@ public class FishingRod : MonoBehaviour
     /// </summary>
     private void HandleFishCollision()
     {
-        foreach (GameObject fish in oceanFish)
+        for(int i = 0; i < oceanFish.Count; i++)
         {
-            if(Vector2.Distance(fish.transform.position, new Vector2(hookPosition.x, hookPosition.y)) <= lureRadius)
+            if(Vector2.Distance(oceanFish[i].transform.position, new Vector2(hookPosition.x, hookPosition.y)) <= lureRadius)
             {
-                hookedFish.Add(fish);
-                oceanFish.Remove(fish);
+                hookedFish.Add(oceanFish[i]);
+                oceanFish.Remove(oceanFish[i]);
+                i--;
                 if(hookedFish.Count > maxFishOnHook)
                 {
                     LineBreak();

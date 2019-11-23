@@ -97,7 +97,7 @@ public class CastingUI_Manager : MonoBehaviour
                 
 
                 angleBarIndicator.transform.rotation = Quaternion.Euler(0.0f, 0.0f, Mathf.Lerp(-90.0f, 90.0f, currentAngle / 180.0f));
-                Debug.Log(angleBarIndicator.transform.rotation.z);
+                // Debug.Log(angleBarIndicator.transform.rotation.z);
 
                 if (Input.GetMouseButtonDown(0))
                 {
