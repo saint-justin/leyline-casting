@@ -43,19 +43,6 @@ public class Catch
     }
 }
 
-[Serializable]
-public class Fish
-{
-    public float weight;
-    public FishType type;
-
-    public Fish(float weight = 0.0f, FishType type = FishType.WooManngo)
-    {
-        this.weight = weight;
-        this.type = type;
-    }
-}
-
 public enum FishType
 {
     WooManngo, // Yellow,png
