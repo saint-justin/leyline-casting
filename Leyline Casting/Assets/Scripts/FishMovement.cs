@@ -8,11 +8,17 @@ public class FishMovement : MonoBehaviour
 {
     public MovementPattern movementPattern = MovementPattern.LeftRight;
 
+    Fish fish = new Fish();
+    Gold_Manager goldManager = new Gold_Manager();
+
     // Variables for moving
     public Vector2 fishPosition;
     public Vector2 direction;
     public float fishSpeed = 2.0f;
+    public float fishWeight = 0.0f;
     public List<Vector2> referencePoints;
+    public int gold;
+
 
     // Variables used for various movement patterns
     private int patternInt = 0;
@@ -29,6 +35,12 @@ public class FishMovement : MonoBehaviour
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
 
         fishSpeed = Random.Range(1.5f, 2.5f);
+
+        // determines the random weight of the given fish
+        fish = gameObject.GetComponent<Fish>();
+        fishWeight = RandomWeight(fish.type);
+        // determines the gold of this fish
+        gold = goldManager.ReturnGold(fish.type, fishWeight);
 
         // Set the reference points depending on the fish's movement pattern
         referencePoints = new List<Vector2>();
@@ -270,5 +282,26 @@ public class FishMovement : MonoBehaviour
     private void UpdateTransformPosition()
     {
         transform.position = new Vector3(fishPosition.x, fishPosition.y, transform.position.z);
+    }
+
+
+    // returns a random weight within a range based on the type of fish 
+    float RandomWeight(FishType type)
+    {
+        switch (type)
+        {
+            case FishType.WooManngo:
+                return Random.Range(7.0f, 9.6f);
+            case FishType.AngleLilac:
+                return Random.Range(3.0f, 7.0f);
+            case FishType.MagiCarp:
+                return Random.Range(1.0f, 6.0f);
+            case FishType.ToxicBlockhead:
+                return Random.Range(2.0f, 12.0f);
+            case FishType.Chad:
+                return Random.Range(70.0f, 96.0f);
+            default:
+                return 0.0f;
+        }
     }
 }

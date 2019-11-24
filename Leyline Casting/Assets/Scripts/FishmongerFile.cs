@@ -49,7 +49,7 @@ public class Fish
     public float weight;
     public FishType type;
 
-    public Fish(float weight = 0.0f, FishType type = FishType.Salmon)
+    public Fish(float weight = 0.0f, FishType type = FishType.WooManngo)
     {
         this.weight = weight;
         this.type = type;
@@ -58,11 +58,11 @@ public class Fish
 
 public enum FishType
 {
-    Salmon,
-    Cod,
-    Trout,
-    Fomor,
-    Bass,
+    WooManngo, // Yellow,png
+    AngleLilac, // Lilac.png
+    ToxicBlockhead, // Green.png
+    Chad, // BlueFormar.png
+    MagiCarp, // totally not a rip off Orange.png
     Perch
 }
 
@@ -189,7 +189,7 @@ public class FishmongerFile : MonoBehaviour
 
         fishFile.deepestCatch.fish = new List<Fish>();
         fishFile.deepestCatch.fish.Add(new Fish());
-        fishFile.deepestCatch.fish[0].type = FishType.Salmon;
+        fishFile.deepestCatch.fish[0].type = FishType.WooManngo;
         fishFile.deepestCatch.fish[0].weight = 10.2f;
 
         fishFile.heaviestCatch = new Catch();
@@ -199,13 +199,13 @@ public class FishmongerFile : MonoBehaviour
 
         fishFile.heaviestCatch.fish = new List<Fish>();
         fishFile.heaviestCatch.fish.Add(new Fish());
-        fishFile.heaviestCatch.fish[0].type = FishType.Cod;
+        fishFile.heaviestCatch.fish[0].type = FishType.AngleLilac;
         fishFile.heaviestCatch.fish[0].weight = 10.3f;
         fishFile.heaviestCatch.fish.Add(new Fish());
-        fishFile.heaviestCatch.fish[1].type = FishType.Fomor;
+        fishFile.heaviestCatch.fish[1].type = FishType.Chad;
         fishFile.heaviestCatch.fish[1].weight = 30.2f;
         fishFile.heaviestCatch.fish.Add(new Fish());
-        fishFile.heaviestCatch.fish[2].type = FishType.Trout;
+        fishFile.heaviestCatch.fish[2].type = FishType.ToxicBlockhead;
         fishFile.heaviestCatch.fish[2].weight = 16.7f;
 
         fishFile.varietyCatchNumber = 4;
@@ -217,34 +217,34 @@ public class FishmongerFile : MonoBehaviour
 
         fishFile.varietyCatch.fish = new List<Fish>();
         fishFile.varietyCatch.fish.Add(new Fish());
-        fishFile.varietyCatch.fish[0].type = FishType.Cod;
+        fishFile.varietyCatch.fish[0].type = FishType.AngleLilac;
         fishFile.varietyCatch.fish[0].weight = 9.8f;
         fishFile.varietyCatch.fish.Add(new Fish());
-        fishFile.varietyCatch.fish[1].type = FishType.Fomor;
+        fishFile.varietyCatch.fish[1].type = FishType.Chad;
         fishFile.varietyCatch.fish[1].weight = 20.2f;
         fishFile.varietyCatch.fish.Add(new Fish());
-        fishFile.varietyCatch.fish[2].type = FishType.Trout;
+        fishFile.varietyCatch.fish[2].type = FishType.ToxicBlockhead;
         fishFile.varietyCatch.fish[2].weight = 10.4f;
         fishFile.varietyCatch.fish.Add(new Fish());
-        fishFile.varietyCatch.fish[2].type = FishType.Salmon;
+        fishFile.varietyCatch.fish[2].type = FishType.WooManngo;
         fishFile.varietyCatch.fish[2].weight = 6.4f;
 
         fishFile.biggestFishCaught = new List<Fish>();
 
         fishFile.biggestFishCaught.Add(new Fish());
-        fishFile.biggestFishCaught[0].type = FishType.Cod;
+        fishFile.biggestFishCaught[0].type = FishType.AngleLilac;
         fishFile.biggestFishCaught[0].weight = 10.3f;
 
         fishFile.biggestFishCaught.Add( new Fish());
-        fishFile.biggestFishCaught[1].type = FishType.Salmon;
+        fishFile.biggestFishCaught[1].type = FishType.WooManngo;
         fishFile.biggestFishCaught[1].weight = 10.2f;
 
         fishFile.biggestFishCaught.Add(new Fish());
-        fishFile.biggestFishCaught[2].type = FishType.Trout;
+        fishFile.biggestFishCaught[2].type = FishType.ToxicBlockhead;
         fishFile.biggestFishCaught[2].weight = 16.7f;
 
         fishFile.biggestFishCaught.Add(new Fish());
-        fishFile.biggestFishCaught[3].type = FishType.Fomor;
+        fishFile.biggestFishCaught[3].type = FishType.Chad;
         fishFile.biggestFishCaught[3].weight = 30.2f;
 
         // serialize to write
