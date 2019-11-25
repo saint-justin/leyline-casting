@@ -189,7 +189,7 @@ public class FishingRod : MonoBehaviour
     /// Sets the maximum number of fish that can be hooked before the line breaks
     /// </summary>
     /// <param name="newMaxFishOnHook">Maximum number of fish that can be hooked</param>
-    public void SetMaxFishOnHook(int newMaxFishOnHook)
+    public void SetMaxFishOnHook(float newMaxFishOnHook)
     {
         maxFishOnHook = newMaxFishOnHook;
     }

@@ -5,10 +5,37 @@ using UnityEngine;
 public static class UpgradeLevels
 {
 
-    //mcs = 3, 6, 9, 12
-    //line = 1, 2, 3, 4
-    //maxFishOnHook = 4, 8, 12, 16
-    //lureR = 1, 1.5, 2.0, 2.5
+    //mcs = 3, 6, 9, 12 - rod
+    //line = 1, 2, 3, 4 - line
+    //maxFishOnHook = 4, 8, 12, 16 - hook
+    //lureR = 1, 1.5, 2.0, 2.5 - lure
+    public enum Types
+    {
+        MaxCastStrength,
+        LineStrength,
+        MaxFish,
+        LureRadius,
+    }
+
+    public static void SetUpgrade(FishingRod rod, Types type, int index)
+    {
+        switch (type)
+        {
+            case Types.MaxCastStrength:
+                rod.SetMaxCastStrength(maxCastStrength[index].value);
+                break;
+            case Types.LineStrength:
+                rod.SetLineStrength(lineStrength[index].value);
+                break;
+            case Types.MaxFish:
+                rod.SetMaxFishOnHook(maxFish[index].value);
+                break;
+            case Types.LureRadius:
+                rod.SetLureRadius(maxCastStrength[index].value);
+                break;
+        }
+    }
+
     private static Upgrade[] maxCastStrength =
     {
         new Upgrade(100, 3.0f),
@@ -57,15 +84,25 @@ public struct Upgrade
 public class Shop : MonoBehaviour
 {
     // all stat values are abbreviated
-    public int mcsIndex = 0;
-    public int lsIndex = 0;
-    public int mfIndex = 0;
-    public int lureRadius = 0;
+    // index 0 is mcs
+    // index 1 is ls
+    // index 2 is mf
+    // index 3 is lr
+    public int[] upgradeIndices = { 0, 0, 0, 0 };
+
+    // objects
+    // public GameObject goldManagerObject;
+    public GameObject fishingRodObject;
+
+    // references
+    // private Gold_Manager goldManager;
+    private FishingRod fishingRod;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        // goldManager = goldManagerObject.GetComponent<Gold_Manager>();
+        fishingRod = fishingRodObject.GetComponent<FishingRod>();
     }
 
     // Update is called once per frame
@@ -74,11 +111,25 @@ public class Shop : MonoBehaviour
         
     }
 
-
-    public bool AttemptPurchase()
+    /// <summary>
+    /// Attempts to purchase upgrade of fishing rod part if player has enough money
+    /// </summary>
+    /// <param name="typeOfUpgrade">Part to upgrade</param>
+    /// <returns>If purchase succeeded</returns>
+    public bool AttemptPurchase(UpgradeLevels.Types typeOfUpgrade)
     {
-        // TODO: gold manager check for money
+        // TODO: player/gold manager check for money
         // if money is less than value
-        return false;
+        //if(false)
+        //    return false;
+
+        // set upgradevalue
+        UpgradeLevels.SetUpgrade(
+            fishingRod, // rod reference
+            typeOfUpgrade, // type of upgrade from enum in UpgradeLevels (written above this class)
+            upgradeIndices[(int)typeOfUpgrade] // index of current upgrade
+            );
+
+        return true;
     }
 }
