@@ -529,3 +529,6 @@ C:\Users\Kevin\source\repos\FISHING GAAAAAAAMEEEE\Leyline Casting\obj\Debug\Asse
 C:\Users\Kevin\source\repos\FISHING GAAAAAAAMEEEE\Leyline Casting\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 C:\Users\Kevin\source\repos\FISHING GAAAAAAAMEEEE\Leyline Casting\obj\Debug\Assembly-CSharp.dll
 C:\Users\Kevin\source\repos\FISHING GAAAAAAAMEEEE\Leyline Casting\obj\Debug\Assembly-CSharp.pdb
+D:\Andrew\Documents\College HW\320\leyline-casting\Leyline Casting\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+D:\Andrew\Documents\College HW\320\leyline-casting\Leyline Casting\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+D:\Andrew\Documents\College HW\320\leyline-casting\Leyline Casting\obj\Debug\Assembly-CSharp.dll

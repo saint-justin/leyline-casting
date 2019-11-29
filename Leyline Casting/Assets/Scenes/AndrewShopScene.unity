@@ -480,49 +480,6 @@ Transform:
   m_Father: {fileID: 1531757636}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &409833972
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 409833973}
-  - component: {fileID: 409833974}
-  m_Layer: 0
-  m_Name: Gold Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &409833973
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 409833972}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1804473947}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &409833974
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 409833972}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65bbb948d1b8d434bae70655e4902ff3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &423453229
 GameObject:
   m_ObjectHideFlags: 0
@@ -534,7 +491,6 @@ GameObject:
   - component: {fileID: 423453230}
   - component: {fileID: 423453232}
   - component: {fileID: 423453231}
-  - component: {fileID: 423453233}
   m_Layer: 0
   m_Name: WanderFish 2
   m_TagString: Untagged
@@ -572,11 +528,9 @@ MonoBehaviour:
   fishPosition: {x: 0, y: 0}
   direction: {x: 0, y: 0}
   fishSpeed: 2
-  fishWeight: 0
   referencePoints:
   - {x: -10, y: 0}
   - {x: 10, y: 0}
-  gold: 0
 --- !u!212 &423453232
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -625,20 +579,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &423453233
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 423453229}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a52c7421a6ab57f45ba6f0e77f086c45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weight: 0
-  type: 0
 --- !u!1 &514883332
 GameObject:
   m_ObjectHideFlags: 0
@@ -650,7 +590,6 @@ GameObject:
   - component: {fileID: 514883333}
   - component: {fileID: 514883335}
   - component: {fileID: 514883334}
-  - component: {fileID: 514883336}
   m_Layer: 0
   m_Name: LeftRightFish 2
   m_TagString: Untagged
@@ -688,11 +627,9 @@ MonoBehaviour:
   fishPosition: {x: 0, y: 0}
   direction: {x: 0, y: 0}
   fishSpeed: 2
-  fishWeight: 0
   referencePoints:
   - {x: -10, y: 0}
   - {x: 10, y: 0}
-  gold: 0
 --- !u!212 &514883335
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -741,20 +678,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &514883336
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 514883332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a52c7421a6ab57f45ba6f0e77f086c45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weight: 0
-  type: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -880,7 +803,6 @@ GameObject:
   - component: {fileID: 551835146}
   - component: {fileID: 551835147}
   - component: {fileID: 551835148}
-  - component: {fileID: 551835149}
   m_Layer: 0
   m_Name: LeftRightFish 1
   m_TagString: Untagged
@@ -966,25 +888,9 @@ MonoBehaviour:
   fishPosition: {x: 0, y: 0}
   direction: {x: 0, y: 0}
   fishSpeed: 2
-  fishWeight: 0
   referencePoints:
   - {x: -10, y: 0}
   - {x: 10, y: 0}
-  gold: 0
---- !u!114 &551835149
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 551835145}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a52c7421a6ab57f45ba6f0e77f086c45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weight: 0
-  type: 0
 --- !u!1 &718468812
 GameObject:
   m_ObjectHideFlags: 0
@@ -1157,7 +1063,6 @@ GameObject:
   - component: {fileID: 915034992}
   - component: {fileID: 915034994}
   - component: {fileID: 915034993}
-  - component: {fileID: 915034995}
   m_Layer: 0
   m_Name: CircleCWFish 2
   m_TagString: Untagged
@@ -1195,11 +1100,9 @@ MonoBehaviour:
   fishPosition: {x: 0, y: 0}
   direction: {x: 0, y: 0}
   fishSpeed: 2
-  fishWeight: 0
   referencePoints:
   - {x: -10, y: 0}
   - {x: 10, y: 0}
-  gold: 0
 --- !u!212 &915034994
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1248,20 +1151,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &915034995
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 915034991}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a52c7421a6ab57f45ba6f0e77f086c45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weight: 0
-  type: 0
 --- !u!1 &1009584550
 GameObject:
   m_ObjectHideFlags: 0
@@ -1342,6 +1231,55 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1101507637
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1101507639}
+  - component: {fileID: 1101507638}
+  m_Layer: 0
+  m_Name: Shop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1101507638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1101507637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34c5036a90bd9b0408486ba0a0f60767, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mcsIndex: 0
+  lsIndex: 0
+  mfIndex: 0
+  lureRadius: 0
+  gMObject: {fileID: 0}
+  rodObject: {fileID: 0}
+--- !u!4 &1101507639
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1101507637}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1371413426
 GameObject:
   m_ObjectHideFlags: 0
@@ -1353,7 +1291,6 @@ GameObject:
   - component: {fileID: 1371413427}
   - component: {fileID: 1371413429}
   - component: {fileID: 1371413428}
-  - component: {fileID: 1371413430}
   m_Layer: 0
   m_Name: CircleCCWFish 2
   m_TagString: Untagged
@@ -1391,11 +1328,9 @@ MonoBehaviour:
   fishPosition: {x: 0, y: 0}
   direction: {x: 0, y: 0}
   fishSpeed: 2
-  fishWeight: 0
   referencePoints:
   - {x: -10, y: 0}
   - {x: 10, y: 0}
-  gold: 0
 --- !u!212 &1371413429
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1444,20 +1379,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1371413430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1371413426}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a52c7421a6ab57f45ba6f0e77f086c45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weight: 0
-  type: 0
 --- !u!1 &1372213027
 GameObject:
   m_ObjectHideFlags: 0
@@ -1548,7 +1469,6 @@ GameObject:
   - component: {fileID: 1386140180}
   - component: {fileID: 1386140182}
   - component: {fileID: 1386140181}
-  - component: {fileID: 1386140183}
   m_Layer: 0
   m_Name: CircleCCWFish 1
   m_TagString: Untagged
@@ -1586,11 +1506,9 @@ MonoBehaviour:
   fishPosition: {x: 0, y: 0}
   direction: {x: 0, y: 0}
   fishSpeed: 2
-  fishWeight: 0
   referencePoints:
   - {x: -10, y: 0}
   - {x: 10, y: 0}
-  gold: 0
 --- !u!212 &1386140182
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1639,20 +1557,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1386140183
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1386140179}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a52c7421a6ab57f45ba6f0e77f086c45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weight: 0
-  type: 0
 --- !u!1 &1425095579
 GameObject:
   m_ObjectHideFlags: 0
@@ -1664,7 +1568,6 @@ GameObject:
   - component: {fileID: 1425095580}
   - component: {fileID: 1425095582}
   - component: {fileID: 1425095581}
-  - component: {fileID: 1425095583}
   m_Layer: 0
   m_Name: WanderFish 1
   m_TagString: Untagged
@@ -1702,11 +1605,9 @@ MonoBehaviour:
   fishPosition: {x: 0, y: 0}
   direction: {x: 0, y: 0}
   fishSpeed: 2
-  fishWeight: 0
   referencePoints:
   - {x: -10, y: 0}
   - {x: 10, y: 0}
-  gold: 0
 --- !u!212 &1425095582
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1755,20 +1656,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1425095583
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1425095579}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a52c7421a6ab57f45ba6f0e77f086c45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weight: 0
-  type: 0
 --- !u!1 &1438975768
 GameObject:
   m_ObjectHideFlags: 0
@@ -1780,7 +1667,6 @@ GameObject:
   - component: {fileID: 1438975769}
   - component: {fileID: 1438975771}
   - component: {fileID: 1438975770}
-  - component: {fileID: 1438975772}
   m_Layer: 0
   m_Name: WanderFish 3
   m_TagString: Untagged
@@ -1818,11 +1704,9 @@ MonoBehaviour:
   fishPosition: {x: 0, y: 0}
   direction: {x: 0, y: 0}
   fishSpeed: 2
-  fishWeight: 0
   referencePoints:
   - {x: -10, y: 0}
   - {x: 10, y: 0}
-  gold: 0
 --- !u!212 &1438975771
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1871,20 +1755,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1438975772
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1438975768}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a52c7421a6ab57f45ba6f0e77f086c45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weight: 0
-  type: 0
 --- !u!1 &1531757635
 GameObject:
   m_ObjectHideFlags: 0
@@ -1999,9 +1869,6 @@ GameObject:
   - component: {fileID: 1578553632}
   - component: {fileID: 1578553634}
   - component: {fileID: 1578553633}
-  - component: {fileID: 1578553637}
-  - component: {fileID: 1578553636}
-  - component: {fileID: 1578553635}
   m_Layer: 0
   m_Name: CircleCWFish 1
   m_TagString: Untagged
@@ -2039,11 +1906,9 @@ MonoBehaviour:
   fishPosition: {x: 0, y: 0}
   direction: {x: 0, y: 0}
   fishSpeed: 2
-  fishWeight: 0
   referencePoints:
   - {x: -10, y: 0}
   - {x: 10, y: 0}
-  gold: 0
 --- !u!212 &1578553634
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2092,48 +1957,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1578553635
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1578553631}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a52c7421a6ab57f45ba6f0e77f086c45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weight: 0
-  type: 0
---- !u!114 &1578553636
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1578553631}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a52c7421a6ab57f45ba6f0e77f086c45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weight: 0
-  type: 0
---- !u!114 &1578553637
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1578553631}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a52c7421a6ab57f45ba6f0e77f086c45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weight: 0
-  type: 0
 --- !u!1 &1748248063
 GameObject:
   m_ObjectHideFlags: 0
@@ -2145,7 +1968,6 @@ GameObject:
   - component: {fileID: 1748248064}
   - component: {fileID: 1748248066}
   - component: {fileID: 1748248065}
-  - component: {fileID: 1748248067}
   m_Layer: 0
   m_Name: LeftRightFish 3
   m_TagString: Untagged
@@ -2183,11 +2005,9 @@ MonoBehaviour:
   fishPosition: {x: 0, y: 0}
   direction: {x: 0, y: 0}
   fishSpeed: 2
-  fishWeight: 0
   referencePoints:
   - {x: -10, y: 0}
   - {x: 10, y: 0}
-  gold: 0
 --- !u!212 &1748248066
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2236,20 +2056,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1748248067
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1748248063}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a52c7421a6ab57f45ba6f0e77f086c45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weight: 0
-  type: 0
 --- !u!1 &1804473945
 GameObject:
   m_ObjectHideFlags: 0
@@ -2317,7 +2123,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 519420032}
-  - {fileID: 409833973}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2347,7 +2152,6 @@ GameObject:
   - component: {fileID: 1960192590}
   - component: {fileID: 1960192592}
   - component: {fileID: 1960192591}
-  - component: {fileID: 1960192593}
   m_Layer: 0
   m_Name: WanderFish 4
   m_TagString: Untagged
@@ -2385,11 +2189,9 @@ MonoBehaviour:
   fishPosition: {x: 0, y: 0}
   direction: {x: 0, y: 0}
   fishSpeed: 2
-  fishWeight: 0
   referencePoints:
   - {x: -10, y: 0}
   - {x: 10, y: 0}
-  gold: 0
 --- !u!212 &1960192592
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2438,20 +2240,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1960192593
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1960192589}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a52c7421a6ab57f45ba6f0e77f086c45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weight: 0
-  type: 0
 --- !u!1 &1968990386
 GameObject:
   m_ObjectHideFlags: 0
