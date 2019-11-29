@@ -1,3 +1,4 @@
+![Leyline Casting Logo](/Assets/GameLogo.png)
 # LEYLINE CASTING
 Play as Harry Dresden, a wizard from the mythical realm of Chicago, on a fishing trawler to the island Demonreach in Lake Michigan. Catch fish, magical creatures, and lost treasures in the deep in this casual mobile game to fill your handy-dandy angler's almanac, the Fishing File. Mythologia awaits.
 
