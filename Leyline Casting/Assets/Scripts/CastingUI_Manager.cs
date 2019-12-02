@@ -113,11 +113,16 @@ public class CastingUI_Manager : MonoBehaviour
 
             case fishingState.none:
                 // Checks if we need to start powering state
-                if (fishingRod.finiteState == FishingState.Inactive && Input.GetMouseButtonDown(0))
+                if(Input.GetMouseButtonDown(0) && fishingRod.finiteState == FishingState.Inactive)
                 {
                     currentState = fishingState.powering;
                     powerBarParent.GetComponent<SpriteRenderer>().enabled = true;
                     powerBarIndicator.GetComponent<SpriteRenderer>().enabled = true;
+                }
+                // Reels in the fishing rod faster if the mouse is clicked
+                else if(fishingRod.finiteState == FishingState.Rising && Input.GetMouseButton(0))
+                {
+                    fishingRod.HandleMouseDown();
                 }
                 break;
             default:
