@@ -3883,7 +3883,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1780673904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4003,6 +4003,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activeCamera: {fileID: 519420031}
+  fishingRod: {fileID: 0}
   movementCurve:
     serializedVersion: 2
     m_Curve:

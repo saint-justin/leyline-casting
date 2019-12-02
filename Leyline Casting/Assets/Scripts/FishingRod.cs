@@ -103,6 +103,8 @@ public class FishingRod : MonoBehaviour
                 }
                 break;
             case FishingState.Rising:
+                hookVelocity = hookVelocity * 0.9f
+                    + new Vector2(0.0f, 2.0f) * 0.1f;
                 if (hookPosition.y > transform.position.y - 1.0f)
                 {
                     foreach (GameObject fish in hookedFish)
@@ -201,5 +203,17 @@ public class FishingRod : MonoBehaviour
     public void SetLureRadius(float newLureRadius)
     {
         lureRadius = newLureRadius;
+    }
+
+    /// <summary>
+    /// If the fishing hook is rising, clicking applies a faster reel in
+    /// </summary>
+    public void HandleMouseDown()
+    {
+        if(finiteState == FishingState.Rising)
+        {
+            hookVelocity = hookVelocity * 0.7f 
+                + ((hookInactivePosition - hookPosition).normalized * 5.0f) * 0.3f;
+        }
     }
 }

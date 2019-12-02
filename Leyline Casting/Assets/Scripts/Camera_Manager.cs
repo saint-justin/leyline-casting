@@ -6,6 +6,7 @@ public class Camera_Manager : MonoBehaviour
 {
     // External References
     public Camera activeCamera;
+    public FishingRod fishingRod;
 
     private Vector3 startPosition;
     private Vector3 targetPosition;
@@ -21,17 +22,23 @@ public class Camera_Manager : MonoBehaviour
     void Start()
     {
         activeCamera = Camera.main;
+        fishingRod = GameObject.Find("fishing_pole").GetComponent<FishingRod>();
     }
 
     // Update is called once per frame
     void Update()
     {
         // Testing camera movement
-        if (Input.GetKeyDown(KeyCode.L))
+        /*if (Input.GetKeyDown(KeyCode.L))
         {
             Vector3 newPos = new Vector3(activeCamera.transform.position.x, activeCamera.transform.position.y + 5, activeCamera.transform.position.z);
             TrackTo(newPos, 1.0f);
         }
+
+        if (moving)
+            ContinueMoving();*/
+
+        TrackTo(fishingRod.hookPosition, 2.0f);
 
         if (moving)
             ContinueMoving();
@@ -44,6 +51,9 @@ public class Camera_Manager : MonoBehaviour
     /// <param name="_duration"></param>
     public void TrackTo(Vector3 _targetPosition, float _duration)
     {
+        // Make sure the camera doesn't change z values
+        _targetPosition.z = activeCamera.transform.position.z;
+
         // Make sure we're moving to a new position
         if (_targetPosition == activeCamera.transform.position)
             return;
