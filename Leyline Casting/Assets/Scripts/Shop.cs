@@ -122,6 +122,8 @@ public class Shop : MonoBehaviour
         // if money is less than value
         //if(false)
         //    return false;
+
+
         Debug.Log(typeOfUpgrade);
 
         // set upgradevalue
@@ -130,6 +132,12 @@ public class Shop : MonoBehaviour
             typeOfUpgrade, // type of upgrade from enum in UpgradeLevels (written above this class)
             upgradeIndices[(int)typeOfUpgrade] // index of current upgrade
             );
+
+        // increase index of upgrade, unless max upgrades are hit
+        // might want to move some of this into SetUpgrade if 
+        // # of upgrades per obj becomes variable
+        if(upgradeIndices[(int)typeOfUpgrade] < 3)
+            upgradeIndices[(int)typeOfUpgrade]++;
 
         // return true;
     }
