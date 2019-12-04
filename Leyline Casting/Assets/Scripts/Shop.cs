@@ -84,10 +84,11 @@ public struct Upgrade
 public class Shop : MonoBehaviour
 {
     // all stat values are abbreviated
-    // index 0 is mcs
-    // index 1 is ls
-    // index 2 is mf
-    // index 3 is lr
+    // indices match with the number in the enum
+    // index 0 is mcs (rod)
+    // index 1 is ls (line)
+    // index 2 is mf (hook)
+    // index 3 is lr (lure)
     public int[] upgradeIndices = { 0, 0, 0, 0 };
 
     // objects
@@ -115,13 +116,15 @@ public class Shop : MonoBehaviour
     /// Attempts to purchase upgrade of fishing rod part if player has enough money
     /// </summary>
     /// <param name="typeOfUpgrade">Part to upgrade</param>
-    /// <returns>If purchase succeeded</returns>
-    public bool AttemptPurchase(UpgradeLevels.Types typeOfUpgrade)
+    public void AttemptPurchase(UpgradeLevels.Types typeOfUpgrade)
     {
         // TODO: player/gold manager check for money
         // if money is less than value
         //if(false)
         //    return false;
+
+
+        Debug.Log(typeOfUpgrade);
 
         // set upgradevalue
         UpgradeLevels.SetUpgrade(
@@ -130,6 +133,18 @@ public class Shop : MonoBehaviour
             upgradeIndices[(int)typeOfUpgrade] // index of current upgrade
             );
 
-        return true;
+        // increase index of upgrade, unless max upgrades are hit
+        // might want to move some of this into SetUpgrade if 
+        // # of upgrades per obj becomes variable
+        if(upgradeIndices[(int)typeOfUpgrade] < 3)
+            upgradeIndices[(int)typeOfUpgrade]++;
+
+        // return true;
+    }
+
+    // same as above function, works with integral representation of enum instead
+    public void AttemptPurchase(int typeOfUpgrade)
+    {
+        AttemptPurchase((UpgradeLevels.Types)typeOfUpgrade);
     }
 }
