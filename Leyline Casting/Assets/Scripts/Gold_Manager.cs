@@ -4,85 +4,122 @@ using UnityEngine;
 
 public class Gold_Manager : MonoBehaviour
 {
+    // this is the player’s overall gold 
+    public int gold;
+
     // Start is called before the first frame update
     void Start()
     {
         Fish fish = new Fish();
+        gold = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        // Woo Mango Fish 
 
+
+    }
+
+    // adds the amount of value to the public variable gold
+    public int AddGold(int value)
+    {
+        gold = gold + value;
+        return gold;
+    }
+
+    // subtracts the amount of value from the public variable gold 
+    public int SubtractGold(int value)
+    {
+        gold = gold - value;
+        return gold;
     }
 
 
     // returns gold value from caught fish based on the fish and it's weight 
-    public int ReturnGold(FishType type, float weight)
+    public int ReturnGoldByWeight(FishType type, float weight)
     {
-        int gold = 0;
-
         if (type == FishType.WooManngo) // range is from 7 to 9.6 pounds 
         {
-            if (weight <=9.0f)
+            if (weight == 9.6f)
             {
-                gold = 25;
+                gold = gold + 30;
+            }
+            else if (weight >= 7.9f && weight != 9.6f)
+            {
+                gold = gold + 25;
             }
             else
             {
-                gold = 20;
+                gold = gold + 20;
             }
         }
 
         if (type == FishType.AngleLilac) // range is from 3 to 7 pounds
         {
-            if (weight <= 6.0f)
+            if (weight == 7.0f)
             {
-                gold = 15;
+                gold = gold + 17;
+            }
+            else if (weight >= 5.9f && weight != 7.0f)
+            {
+                gold = gold + 15;
             }
             else
             {
-                gold = 12;
+                gold = gold + 12;
             }
         }
 
         if (type == FishType.MagiCarp) // range is from 1 to 6 pounds
         {
-            if (weight <= 4.8)
+            if (weight == 6.0f)
             {
-                gold = 10;
+                gold = gold + 12;
+            }
+            else if (weight >= 4.8 && weight != 6.0f)
+            {
+                gold = gold + 10;
             }
             else
             {
-                gold = 7;
+                gold = gold + 7;
             }
         }
 
         if (type == FishType.ToxicBlockhead) // range is from 2 to 12 pounds
         {
-            if (weight <= 9)
+            if (weight == 12.0f)
             {
-                gold = 40;
+                gold = gold + 50;
+            }
+            else if (weight >= 9.5 && weight != 12.0f)
+            {
+                gold = gold + 40;
             }
             else
             {
-                gold = 30;
+                gold = gold + 30;
             }
         }
 
         if (type == FishType.Chad) // range is from 70 to 96 pounds
         {
-            if (weight <= 89)
+            if (weight == 96.0f)
             {
-                gold = 75;
+                gold = gold + 90;
+            }
+            else if (weight >= 89 && weight != 96.0f)
+            {
+                gold = gold + 75;
             }
             else
             {
-                gold = 50;
+                gold = gold + 50;
             }
         }
 
         return gold;
     }
 }
+

@@ -8,7 +8,7 @@ public class FishMovement : MonoBehaviour
 {
     public MovementPattern movementPattern = MovementPattern.LeftRight;
 
-    Fish fish = new Fish();
+    Fish fishForGold = new Fish();
     Gold_Manager goldManager;
 
     // Variables for moving
@@ -37,11 +37,12 @@ public class FishMovement : MonoBehaviour
         fishSpeed = Random.Range(1.5f, 2.5f);
 
         // determines the random weight of the given fish
-        fish = gameObject.GetComponent<Fish>();
-        fishWeight = RandomWeight(fish.type);
+        //fishForGold = gameObject.GetComponent<Fish>();
+        fishWeight = RandomWeight(fishForGold.type);
         // determines the gold of this fish
-        goldManager = GameObject.Find("Gold Manager").GetComponent<Gold_Manager>();
-        gold = goldManager.ReturnGold(fish.type, fishWeight);
+        goldManager = GameObject.Find("MrManager").GetComponent<Gold_Manager>();
+        gold = goldManager.ReturnGoldByWeight(fishForGold.type, fishWeight);
+
 
         // Set the reference points depending on the fish's movement pattern
         referencePoints = new List<Vector2>();
