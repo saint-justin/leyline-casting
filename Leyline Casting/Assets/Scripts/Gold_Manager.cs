@@ -39,7 +39,7 @@ public class Gold_Manager : MonoBehaviour
     // returns gold value from caught fish based on the fish and it's weight 
     public int ReturnGoldByWeight(FishType type, float weight)
     {
-        if (type == FishType.WooManngo) // range is from 7 to 9.6 pounds 
+        if (type == FishType.WooMango) // range is from 7 to 9.6 pounds 
         {
             if (weight == 9.6f)
             {
@@ -55,7 +55,7 @@ public class Gold_Manager : MonoBehaviour
             }
         }
 
-        if (type == FishType.AngleLilac) // range is from 3 to 7 pounds
+        else if (type == FishType.AngleLilac) // range is from 3 to 7 pounds
         {
             if (weight == 7.0f)
             {
@@ -71,7 +71,7 @@ public class Gold_Manager : MonoBehaviour
             }
         }
 
-        if (type == FishType.MagiCarp) // range is from 1 to 6 pounds
+        else if (type == FishType.MagiCarp) // range is from 1 to 6 pounds
         {
             if (weight == 6.0f)
             {
@@ -87,7 +87,7 @@ public class Gold_Manager : MonoBehaviour
             }
         }
 
-        if (type == FishType.ToxicBlockhead) // range is from 2 to 12 pounds
+        else if (type == FishType.ToxicBlockhead) // range is from 2 to 12 pounds
         {
             if (weight == 12.0f)
             {
@@ -103,7 +103,7 @@ public class Gold_Manager : MonoBehaviour
             }
         }
 
-        if (type == FishType.Chad) // range is from 70 to 96 pounds
+        else if (type == FishType.Chad) // range is from 70 to 96 pounds
         {
             if (weight == 96.0f)
             {

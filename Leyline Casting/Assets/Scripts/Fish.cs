@@ -9,7 +9,7 @@ public class Fish : MonoBehaviour
     public float weight;
     public FishType type;
 
-    public Fish(float weight = 0.0f, FishType type = FishType.WooManngo)
+    public Fish(float weight = 0.0f, FishType type = FishType.WooMango)
     {
         this.weight = weight;
         this.type = type;

@@ -45,7 +45,7 @@ public class Catch
 
 public enum FishType
 {
-    WooManngo, // Yellow,png
+    WooMango, // Yellow,png
     AngleLilac, // Lilac.png
     ToxicBlockhead, // Green.png
     Chad, // BlueFormar.png
@@ -176,7 +176,7 @@ public class FishmongerFile : MonoBehaviour
 
         fishFile.deepestCatch.fish = new List<Fish>();
         fishFile.deepestCatch.fish.Add(new Fish());
-        fishFile.deepestCatch.fish[0].type = FishType.WooManngo;
+        fishFile.deepestCatch.fish[0].type = FishType.WooMango;
         fishFile.deepestCatch.fish[0].weight = 10.2f;
 
         fishFile.heaviestCatch = new Catch();
@@ -213,7 +213,7 @@ public class FishmongerFile : MonoBehaviour
         fishFile.varietyCatch.fish[2].type = FishType.ToxicBlockhead;
         fishFile.varietyCatch.fish[2].weight = 10.4f;
         fishFile.varietyCatch.fish.Add(new Fish());
-        fishFile.varietyCatch.fish[2].type = FishType.WooManngo;
+        fishFile.varietyCatch.fish[2].type = FishType.WooMango;
         fishFile.varietyCatch.fish[2].weight = 6.4f;
 
         fishFile.biggestFishCaught = new List<Fish>();
@@ -223,7 +223,7 @@ public class FishmongerFile : MonoBehaviour
         fishFile.biggestFishCaught[0].weight = 10.3f;
 
         fishFile.biggestFishCaught.Add( new Fish());
-        fishFile.biggestFishCaught[1].type = FishType.WooManngo;
+        fishFile.biggestFishCaught[1].type = FishType.WooMango;
         fishFile.biggestFishCaught[1].weight = 10.2f;
 
         fishFile.biggestFishCaught.Add(new Fish());

@@ -31,8 +31,24 @@ public static class UpgradeLevels
                 rod.SetMaxFishOnHook(maxFish[index].value);
                 break;
             case Types.LureRadius:
-                rod.SetLureRadius(maxCastStrength[index].value);
+                rod.SetLureRadius(lureRadius[index].value);
                 break;
+        }
+    }
+
+    public static Upgrade GetUpgrade(Types type, int index)
+    {
+        switch (type)
+        {
+            case Types.MaxCastStrength:
+            default:
+                return maxCastStrength[index];
+            case Types.LineStrength:
+                return lineStrength[index];
+            case Types.MaxFish:
+                return maxFish[index];
+            case Types.LureRadius:
+                return maxCastStrength[index];
         }
     }
 
@@ -92,17 +108,17 @@ public class Shop : MonoBehaviour
     public int[] upgradeIndices = { 0, 0, 0, 0 };
 
     // objects
-    // public GameObject goldManagerObject;
+    public GameObject goldManagerObject;
     public GameObject fishingRodObject;
 
     // references
-    // private Gold_Manager goldManager;
+    private Gold_Manager goldManager;
     private FishingRod fishingRod;
 
     // Start is called before the first frame update
     void Start()
     {
-        // goldManager = goldManagerObject.GetComponent<Gold_Manager>();
+        goldManager = goldManagerObject.GetComponent<Gold_Manager>();
         fishingRod = fishingRodObject.GetComponent<FishingRod>();
     }
 
@@ -118,13 +134,21 @@ public class Shop : MonoBehaviour
     /// <param name="typeOfUpgrade">Part to upgrade</param>
     public void AttemptPurchase(UpgradeLevels.Types typeOfUpgrade)
     {
-        // TODO: player/gold manager check for money
-        // if money is less than value
-        //if(false)
-        //    return false;
-
+        // player/gold manager check if there's enough money for the next upgrade
+        // if money is less than value, do nothing
+        if(goldManager.gold < UpgradeLevels.GetUpgrade(typeOfUpgrade, upgradeIndices[(int)typeOfUpgrade]).cost)
+            return;
 
         Debug.Log(typeOfUpgrade);
+
+        // check if there are anymore upgrades left
+        // might want to move some of this into SetUpgrade if 
+        // # of upgrades per obj becomes variable
+        if (upgradeIndices[(int)typeOfUpgrade] >= 3)
+            return; // if no future upgrade exists don't do anything... no upgrade is left
+
+        // subtract the cost of the upgrade from the player's current gold tally
+        goldManager.SubtractGold(UpgradeLevels.GetUpgrade(typeOfUpgrade, upgradeIndices[(int)typeOfUpgrade]).cost);
 
         // set upgradevalue
         UpgradeLevels.SetUpgrade(
@@ -133,13 +157,8 @@ public class Shop : MonoBehaviour
             upgradeIndices[(int)typeOfUpgrade] // index of current upgrade
             );
 
-        // increase index of upgrade, unless max upgrades are hit
-        // might want to move some of this into SetUpgrade if 
-        // # of upgrades per obj becomes variable
-        if(upgradeIndices[(int)typeOfUpgrade] < 3)
-            upgradeIndices[(int)typeOfUpgrade]++;
-
-        // return true;
+        // increase index of upgrade
+        upgradeIndices[(int)typeOfUpgrade]++;
     }
 
     // same as above function, works with integral representation of enum instead
