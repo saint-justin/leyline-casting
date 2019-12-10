@@ -109,6 +109,8 @@ public class FishingRod : MonoBehaviour
                 {
                     foreach (GameObject fish in hookedFish)
                     {
+                        FishMovement fishComp = fish.GetComponent<FishMovement>();
+                        fishComp.goldManager.ReturnGoldByWeight(fish.GetComponent<Fish>().type, fishComp.fishWeight);
                         Destroy(fish);
                     }
                     hookedFish.Clear();
