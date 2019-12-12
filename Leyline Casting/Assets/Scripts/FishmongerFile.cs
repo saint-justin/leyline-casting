@@ -50,7 +50,7 @@ public enum FishType
     ToxicBlockhead, // Green.png
     Chad, // BlueFormar.png
     MagiCarp, // totally not a rip off Orange.png
-    Perch
+    DogFish
 }
 
 public class FishmongerFile : MonoBehaviour
