@@ -1,13 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
-<<<<<<< HEAD
-- path: Assets/Scenes/Fish_Variant_Spawning.unity
-=======
-- path: Assets/Scenes/AndrewShop2.unity
->>>>>>> origin/andrew-shop-pt-2
-=======
-- path: Assets/Scenes/FishmongerFile.unity
->>>>>>> a3b6e515f2621a733f2872d5a2c6849dbfd70301
+- path: Assets/Scenes/PeterScene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

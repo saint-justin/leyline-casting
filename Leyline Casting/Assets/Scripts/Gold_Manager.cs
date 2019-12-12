@@ -118,6 +118,10 @@ public class Gold_Manager : MonoBehaviour
                 gold = gold + 50;
             }
         }
+        else if (type == FishType.DogFish)
+        {
+            gold = gold + 500; 
+        }
 
         return gold;
     }
