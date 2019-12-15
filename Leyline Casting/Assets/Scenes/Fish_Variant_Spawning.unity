@@ -294,7 +294,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 2cba6f9efe010884d9681fd42173a691, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4ecbf66bfb8056b45992a34cfc1b64a6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2072,7 +2072,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Pole
+  m_Text: 'Lure
+
 
 '
 --- !u!222 &883301281
@@ -2844,7 +2845,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Reel
+  m_Text: 'Rod
+
+'
 --- !u!222 &1319809279
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3921,7 +3924,7 @@ RectTransform:
   m_GameObject: {fileID: 1878039948}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
+  m_LocalScale: {x: 0.566552, y: 0.566552, z: 0.80936}
   m_Children: []
   m_Father: {fileID: 675018324}
   m_RootOrder: 0
@@ -3951,7 +3954,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 4ecbf66bfb8056b45992a34cfc1b64a6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 71e13331fe12768488aa2fe90a0d2206, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
