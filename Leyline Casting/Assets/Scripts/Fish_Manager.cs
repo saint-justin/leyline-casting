@@ -31,14 +31,14 @@ public class Fish_Manager : MonoBehaviour
         spriteIndexes.Add(FishType.AngleLilac, fishSprites[2]);
         spriteIndexes.Add(FishType.Chad, fishSprites[0]);
         spriteIndexes.Add(FishType.MagiCarp, fishSprites[3]);
-        spriteIndexes.Add(FishType.Perch, fishSprites[4]);
+        spriteIndexes.Add(FishType.DogFish, fishSprites[4]);
         spriteIndexes.Add(FishType.ToxicBlockhead, fishSprites[1]);
         spriteIndexes.Add(FishType.WooMango, fishSprites[5]);
 
         // Spawning the sets of fish
         SpawnFishSet(GreenDepth, 25, FishType.WooMango);
         SpawnFishSet(LilacDepth, 15, FishType.AngleLilac);
-        SpawnFishSet(OrangeDepth, 15, FishType.Perch);
+        SpawnFishSet(OrangeDepth, 15, FishType.DogFish);
         SpawnFishSet(PinkDepth, 15, FishType.MagiCarp);
         SpawnFishSet(YellowDepth, 15, FishType.ToxicBlockhead);
         SpawnFishSet(YellowDepth, 15, FishType.Chad);
