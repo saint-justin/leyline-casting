@@ -63,6 +63,9 @@ public class Fish_Manager : MonoBehaviour
         newFish.GetComponent<SpriteRenderer>().sprite = spriteIndexes[_type];
         newFish.transform.position = new Vector3(xPos, yPos, 0);
 
+        // Set the movement pattern to wander
+        newFish.GetComponent<FishMovement>().movementPattern = MovementPattern.Wander;
+
         // Instantiate & adjust transform parent
         Instantiate(newFish, FishParent.transform);
         //newFish.transform.SetParent(FishParent.transform);

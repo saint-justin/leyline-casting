@@ -17,11 +17,7 @@ MonoBehaviour:
     x: 0
     y: 43
     width: 1920
-<<<<<<< HEAD
-    height: 1007
-=======
-    height: 975
->>>>>>> 3b12e348ec6d412e0146b560ebfcb2bca8200481
+    height: 997
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
@@ -49,17 +45,17 @@ MonoBehaviour:
     width: 1920
 <<<<<<< HEAD
     height: 957
-  m_MinSize: {x: 683, y: 494}
-  m_MaxSize: {x: 14004, y: 14044}
+  m_MinSize: {x: 679, y: 494}
+  m_MaxSize: {x: 14002, y: 14044}
   vertical: 0
-  controlID: 98
+  controlID: 31
 =======
-    height: 925
-  m_MinSize: {x: 683, y: 494}
-  m_MaxSize: {x: 14004, y: 14044}
+    height: 947
+  m_MinSize: {x: 681, y: 494}
+  m_MaxSize: {x: 14002, y: 14044}
   vertical: 0
-  controlID: 101
->>>>>>> 3b12e348ec6d412e0146b560ebfcb2bca8200481
+  controlID: 39
+>>>>>>> origin/andrew-shop-values-and-upgrades
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -75,17 +71,17 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1519
+    x: 1413
     y: 0
 <<<<<<< HEAD
-    width: 401
+    width: 507
     height: 957
 =======
     width: 389
-    height: 925
->>>>>>> 3b12e348ec6d412e0146b560ebfcb2bca8200481
-  m_MinSize: {x: 277, y: 72}
-  m_MaxSize: {x: 4002, y: 4022}
+    height: 947
+>>>>>>> origin/andrew-shop-values-and-upgrades
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -109,14 +105,16 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
-    width: 376
-    height: 579
+    width: 351
+    height: 685
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
 =======
     width: 379
-    height: 559
->>>>>>> 3b12e348ec6d412e0146b560ebfcb2bca8200481
+    height: 573
   m_MinSize: {x: 202, y: 222}
   m_MaxSize: {x: 4002, y: 4022}
+>>>>>>> origin/andrew-shop-values-and-upgrades
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -139,14 +137,14 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
-    y: 579
-    width: 1519
-    height: 378
+    y: 685
+    width: 1413
+    height: 272
 =======
-    y: 559
+    y: 573
     width: 1531
-    height: 366
->>>>>>> 3b12e348ec6d412e0146b560ebfcb2bca8200481
+    height: 374
+>>>>>>> origin/andrew-shop-values-and-upgrades
   m_MinSize: {x: 232, y: 272}
   m_MaxSize: {x: 10002, y: 10022}
   m_ActualView: {fileID: 13}
@@ -154,11 +152,7 @@ MonoBehaviour:
   - {fileID: 13}
   - {fileID: 18}
   m_Selected: 0
-<<<<<<< HEAD
   m_LastSelected: 1
-=======
-  m_LastSelected: 0
->>>>>>> 3b12e348ec6d412e0146b560ebfcb2bca8200481
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -180,11 +174,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1920
-<<<<<<< HEAD
-    height: 1007
-=======
-    height: 975
->>>>>>> 3b12e348ec6d412e0146b560ebfcb2bca8200481
+    height: 997
   m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &7
@@ -225,11 +215,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
-    y: 987
-=======
-    y: 955
->>>>>>> 3b12e348ec6d412e0146b560ebfcb2bca8200481
+    y: 977
     width: 1920
     height: 20
   m_MinSize: {x: 0, y: 0}
@@ -254,20 +240,20 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
-    width: 1519
+    width: 1413
     height: 957
-  m_MinSize: {x: 406, y: 494}
+  m_MinSize: {x: 404, y: 494}
   m_MaxSize: {x: 10002, y: 14044}
   vertical: 1
-  controlID: 99
+  controlID: 32
 =======
     width: 1531
-    height: 925
+    height: 947
   m_MinSize: {x: 406, y: 494}
   m_MaxSize: {x: 10002, y: 14044}
   vertical: 1
-  controlID: 102
->>>>>>> 3b12e348ec6d412e0146b560ebfcb2bca8200481
+  controlID: 40
+>>>>>>> origin/andrew-shop-values-and-upgrades
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -288,20 +274,20 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
-    width: 1519
-    height: 579
-  m_MinSize: {x: 406, y: 222}
-  m_MaxSize: {x: 8006, y: 4022}
+    width: 1413
+    height: 685
+  m_MinSize: {x: 404, y: 222}
+  m_MaxSize: {x: 8004, y: 4022}
   vertical: 0
-  controlID: 100
+  controlID: 33
 =======
     width: 1531
-    height: 559
+    height: 573
   m_MinSize: {x: 406, y: 222}
   m_MaxSize: {x: 8006, y: 4022}
   vertical: 0
-  controlID: 103
->>>>>>> 3b12e348ec6d412e0146b560ebfcb2bca8200481
+  controlID: 41
+>>>>>>> origin/andrew-shop-values-and-upgrades
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -317,15 +303,15 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 376
+    x: 351
     y: 0
 <<<<<<< HEAD
-    width: 1143
-    height: 579
+    width: 1062
+    height: 685
 =======
     width: 1152
-    height: 559
->>>>>>> 3b12e348ec6d412e0146b560ebfcb2bca8200481
+    height: 573
+>>>>>>> origin/andrew-shop-values-and-upgrades
   m_MinSize: {x: 204, y: 222}
   m_MaxSize: {x: 4004, y: 4022}
   m_ActualView: {fileID: 16}
@@ -356,10 +342,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 468
-    y: 181
-    width: 973
-    height: 501
+    x: 379
+    y: 73
+    width: 1150
+    height: 560
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &13
 MonoBehaviour:
@@ -384,14 +370,14 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
-    y: 652
-    width: 1519
-    height: 359
+    y: 758
+    width: 1413
+    height: 253
 =======
-    y: 632
+    y: 646
     width: 1531
-    height: 347
->>>>>>> 3b12e348ec6d412e0146b560ebfcb2bca8200481
+    height: 355
+>>>>>>> origin/andrew-shop-values-and-upgrades
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -405,30 +391,34 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
+    - Assets/Textures/Fish
+  m_ViewMode: 1
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets/Textures/Fish
+=======
     - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
   - Assets/Scripts
+>>>>>>> origin/andrew-shop-values-and-upgrades
   m_LastFoldersGridSize: -1
-<<<<<<< HEAD
-  m_LastProjectPath: D:\_GIT_REPOS\Leyline Casting\Leyline Casting
-=======
-  m_LastProjectPath: D:\unity stuff\Leyline Casting
->>>>>>> 3b12e348ec6d412e0146b560ebfcb2bca8200481
+  m_LastProjectPath: D:\Andrew\Documents\College HW\320\leyline-casting\Leyline Casting
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
-    m_SelectedIDs: f22a0000
-    m_LastClickedID: 10994
-    m_ExpandedIDs: 0000000014290000f22a0000c02b000000ca9a3b
+    m_SelectedIDs: 562b0000
+    m_LastClickedID: 11094
+    m_ExpandedIDs: 000000001a290000022c000000ca9a3b
 =======
-    m_SelectedIDs: 282c0000
-    m_LastClickedID: 11304
-    m_ExpandedIDs: 00000000842a0000e62c000000ca9a3b
->>>>>>> 3b12e348ec6d412e0146b560ebfcb2bca8200481
+    m_SelectedIDs: 1c2f0000
+    m_LastClickedID: 12060
+    m_ExpandedIDs: 00000000782d0000dc2f000000ca9a3b
+>>>>>>> origin/andrew-shop-values-and-upgrades
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -444,7 +434,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 5}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -457,10 +447,10 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
-    m_ExpandedIDs: 0000000014290000f22a0000c02b0000
+    m_ExpandedIDs: 000000001a290000022c0000
 =======
-    m_ExpandedIDs: 00000000842a0000282c0000e62c0000
->>>>>>> 3b12e348ec6d412e0146b560ebfcb2bca8200481
+    m_ExpandedIDs: 00000000782d0000dc2f0000
+>>>>>>> origin/andrew-shop-values-and-upgrades
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -487,8 +477,8 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000
+    m_HadKeyboardFocusLastEvent: 0
+    m_ExpandedInstanceIDs: c6230000e4370000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -536,15 +526,15 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1519
+    x: 1413
     y: 73
 <<<<<<< HEAD
-    width: 399
+    width: 505
     height: 938
 =======
     width: 387
-    height: 906
->>>>>>> 3b12e348ec6d412e0146b560ebfcb2bca8200481
+    height: 928
+>>>>>>> origin/andrew-shop-values-and-upgrades
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
   m_ObjectsLockedBeforeSerialization: []
@@ -580,25 +570,25 @@ MonoBehaviour:
     x: 0
     y: 73
 <<<<<<< HEAD
-    width: 376
-    height: 560
+    width: 351
+    height: 666
 =======
     width: 379
-    height: 540
->>>>>>> 3b12e348ec6d412e0146b560ebfcb2bca8200481
+    height: 554
+>>>>>>> origin/andrew-shop-values-and-upgrades
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
-      m_SelectedIDs: ce54ffff
-      m_LastClickedID: -43826
-      m_ExpandedIDs: 1e55ffff8efbffff242c0000882c0000
-=======
-      m_SelectedIDs: 04270000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 2af9ffff0cfaffff
->>>>>>> 3b12e348ec6d412e0146b560ebfcb2bca8200481
+      m_ExpandedIDs: 8efbffff4e2c0000ce2c0000282d0000402d0000782d00008c2d0000
+=======
+      m_SelectedIDs: 26300000
+      m_LastClickedID: 12326
+      m_ExpandedIDs: 36f8fffff22f0000723000007a300000b2300000cc300000e43000001c310000303100003a310000
+>>>>>>> origin/andrew-shop-values-and-upgrades
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -621,11 +611,7 @@ MonoBehaviour:
     m_LockTracker:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
-<<<<<<< HEAD
-  m_WindowGUID: 0449477cadd209142b9ff940e2a99c29
-=======
-  m_WindowGUID: fb29997409e7c084dabb044592eebcb8
->>>>>>> 3b12e348ec6d412e0146b560ebfcb2bca8200481
+  m_WindowGUID: 7b79ee9becc1b1d42baef617c31a29f1
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -647,21 +633,18 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 376
+    x: 351
     y: 73
 <<<<<<< HEAD
-    width: 1141
-    height: 560
-  m_ViewDataDictionary: {fileID: 0}
-  m_ShowContextualTools: 0
-  m_WindowGUID: 40528fc7bca5e6145b9fd0cdc41a9c74
+    width: 1060
+    height: 666
 =======
     width: 1150
-    height: 540
+    height: 554
+>>>>>>> origin/andrew-shop-values-and-upgrades
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
-  m_WindowGUID: 57d154ab22eea114d91906f43ee9a5bf
->>>>>>> 3b12e348ec6d412e0146b560ebfcb2bca8200481
+  m_WindowGUID: e27c3bd9c6f597041a0765af90d5c974
   m_Gizmos: 1
   m_SceneIsLit: 1
   m_SceneLighting: 1
@@ -671,14 +654,14 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_Position:
 <<<<<<< HEAD
-    m_Target: {x: 4.923014, y: -10.110961, z: 11.4609375}
+    m_Target: {x: 2935.538, y: 377.24054, z: -141.25}
     speed: 2
-    m_Value: {x: 4.923014, y: -10.110961, z: 11.4609375}
+    m_Value: {x: 2935.538, y: 377.24054, z: -141.25}
 =======
-    m_Target: {x: 0, y: 0, z: 0}
+    m_Target: {x: 141.26572, y: 26.620607, z: -31.721489}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0}
->>>>>>> 3b12e348ec6d412e0146b560ebfcb2bca8200481
+    m_Value: {x: 141.26572, y: 26.620607, z: -31.721489}
+>>>>>>> origin/andrew-shop-values-and-upgrades
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -712,14 +695,14 @@ MonoBehaviour:
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
 <<<<<<< HEAD
-    m_Target: 18.704824
+    m_Target: 718.8771
     speed: 2
-    m_Value: 18.704824
+    m_Value: 687.92065
 =======
-    m_Target: 10
+    m_Target: 280.2474
     speed: 2
-    m_Value: 10
->>>>>>> 3b12e348ec6d412e0146b560ebfcb2bca8200481
+    m_Value: 280.2474
+>>>>>>> origin/andrew-shop-values-and-upgrades
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -765,17 +748,15 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 376
+    x: 351
     y: 73
-    width: 1141
-    height: 560
+<<<<<<< HEAD
+    width: 1060
+    height: 591
 =======
-    x: 507
-    y: 94
-    width: 1532
-    height: 790
->>>>>>> 3b12e348ec6d412e0146b560ebfcb2bca8200481
+    width: 1150
+    height: 554
+>>>>>>> origin/andrew-shop-values-and-upgrades
   m_ViewDataDictionary: {fileID: 0}
   m_VSyncEnabled: 0
   m_MaximizeOnPlay: 0
@@ -789,16 +770,16 @@ MonoBehaviour:
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
 <<<<<<< HEAD
-    m_HBaseRangeMin: -152.5
-    m_HBaseRangeMax: 152.5
-    m_VBaseRangeMin: -271.5
-    m_VBaseRangeMax: 271.5
+    m_HBaseRangeMin: -161.5
+    m_HBaseRangeMax: 161.5
+    m_VBaseRangeMin: -287
+    m_VBaseRangeMax: 287
 =======
-    m_HBaseRangeMin: -766
-    m_HBaseRangeMax: 766
-    m_VBaseRangeMin: -386.5
-    m_VBaseRangeMax: 386.5
->>>>>>> 3b12e348ec6d412e0146b560ebfcb2bca8200481
+    m_HBaseRangeMin: -151
+    m_HBaseRangeMax: 151
+    m_VBaseRangeMin: -268.5
+    m_VBaseRangeMax: 268.5
+>>>>>>> origin/andrew-shop-values-and-upgrades
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -807,7 +788,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -817,16 +798,16 @@ MonoBehaviour:
       x: 0
       y: 17
 <<<<<<< HEAD
-      width: 1141
-      height: 543
+      width: 1060
+      height: 574
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 570.5, y: 271.5}
+    m_Translation: {x: 530, y: 287}
 =======
-      width: 1532
-      height: 773
+      width: 1150
+      height: 537
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 766, y: 386.5}
->>>>>>> 3b12e348ec6d412e0146b560ebfcb2bca8200481
+    m_Translation: {x: 575, y: 268.5}
+>>>>>>> origin/andrew-shop-values-and-upgrades
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -834,26 +815,25 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
 <<<<<<< HEAD
-      x: -570.5
-      y: -271.5
-      width: 1141
-      height: 543
+      x: -530
+      y: -287
+      width: 1060
+      height: 574
+=======
+      x: -575
+      y: -268.5
+      width: 1150
+      height: 537
+>>>>>>> origin/andrew-shop-values-and-upgrades
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
-  m_LastWindowPixelSize: {x: 1141, y: 560}
+<<<<<<< HEAD
+  m_LastWindowPixelSize: {x: 1060, y: 591}
 =======
-      x: -766
-      y: -386.5
-      width: 1532
-      height: 773
-    m_MinimalGUI: 1
-  m_defaultScale: 1
-  m_TargetTexture: {fileID: 0}
-  m_CurrentColorSpace: 1
-  m_LastWindowPixelSize: {x: 1532, y: 790}
->>>>>>> 3b12e348ec6d412e0146b560ebfcb2bca8200481
+  m_LastWindowPixelSize: {x: 1150, y: 554}
+>>>>>>> origin/andrew-shop-values-and-upgrades
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000001000100000100
@@ -879,15 +859,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
     x: 0
-    y: 652
-    width: 1519
-    height: 359
-=======
-    x: 8
-    y: 718
-    width: 1366
-    height: 308
->>>>>>> 3b12e348ec6d412e0146b560ebfcb2bca8200481
+    y: 646
+    width: 1531
+    height: 355
   m_ViewDataDictionary: {fileID: 0}
