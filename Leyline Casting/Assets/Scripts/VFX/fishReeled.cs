@@ -6,21 +6,29 @@ public class fishReeled : MonoBehaviour
 {
     // Prototype to manipulate
     public GameObject moneyText;
-    private List<GameObject> instantiatedObjects;
-    private List<float> objectLives;
+    private Queue<GameObject> instantiatedObjects;
+    private Queue<float> objectDeaths;
     private bool running = false;           // Whether or not the script is currently running
     private float floatingSpeed = 2.0f;     // Speed at which the text rises
-    private float lifeTime = 0.6f;          // Lifetime of each text object
+    private float lifeTime = 1.0f;          // Lifetime of each text object
+
+    public ParticleSystem particles;
 
     void Start()
     {
-        instantiatedObjects = new List<GameObject>();
-        objectLives = new List<float>();
+        instantiatedObjects = new Queue<GameObject>();
+        objectDeaths = new Queue<float>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            Begin("200", new Vector3(0, 0, 0));
+            Debug.Log("NEW VFX");
+        }
+
         if (running)
         {
             ContinueRunning();
@@ -33,9 +41,15 @@ public class fishReeled : MonoBehaviour
     public void Begin(string _input, Vector3 _startPos)
     {
         // Spawn in the new text object
-        GameObject instantiatedObject = Instantiate(moneyText, _startPos, Quaternion.identity);
-        instantiatedObjects.Add(instantiatedObject);
-        objectLives.Add(0.0f);
+        GameObject instantiatedObject = Instantiate(moneyText, this.transform.position, Quaternion.identity);
+        instantiatedObjects.Enqueue(instantiatedObject);
+        objectDeaths.Enqueue(Time.time + lifeTime);
+
+        Debug.Log("Object instantiated...");
+        Debug.Log(instantiatedObject);
+
+        // Run the particle system
+        particles.Play();
 
         // Start the animating fxn
         running = true;
@@ -50,20 +64,25 @@ public class fishReeled : MonoBehaviour
         // Update every item in instantiatedObjects to float up
         for(int i=0; i<instantiatedObjects.Count; i++)
         {
+            GameObject obj = instantiatedObjects.Dequeue();
+            float life = objectDeaths.Dequeue();
+
             // Update lifetime of the object & check if it's expired
-            objectLives[i] += Time.deltaTime;
-            if (objectLives[i] >= lifeTime)
+            if (life <= Time.time)
             {
-                objectLives.RemoveAt(i);
-                Destroy(instantiatedObjects[i]);
+                Destroy(obj);
+                Debug.Log("Destroying text object...");
                 continue;
             }
 
             // Update the position of the object if it's still got time
-            Vector3 pos = instantiatedObjects[i].transform.position;
+            Vector3 pos = obj.transform.position;
             pos.y += floatingSpeed;
             pos.x += Mathf.Sin(Time.deltaTime);
-            instantiatedObjects[i].transform.position = pos;
+            obj.transform.position = pos;
+
+            instantiatedObjects.Enqueue(obj);
+            objectDeaths.Enqueue(life);
         }
     }
 }

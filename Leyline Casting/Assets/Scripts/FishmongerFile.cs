@@ -59,7 +59,7 @@ public class FishmongerFile : MonoBehaviour
     public FileJSON fishFile;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         Debug.Log(FileIO.DirectoryAddress);
         // uncomment this to create the file
