@@ -84,12 +84,10 @@ public class CastingUI_Manager : MonoBehaviour
                 if (currentAngle >= maxAngle)
                 {
                     angleMod = -1.0f; 
-                    //Debug.Log("Flip");
                 }
                 else if (currentAngle <= minAngle)
                 {
                     angleMod = 1.0f; 
-                    //Debug.Log("Flop");
                 }
 
                 currentAngle += Time.deltaTime * 90.0f * angleMod;      // Increase the float in the middle here to increase speed
@@ -104,10 +102,9 @@ public class CastingUI_Manager : MonoBehaviour
                     // The angle and power are finalized
                     angleBarParent.GetComponent<SpriteRenderer>().enabled = false;
                     angleBarIndicator.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().enabled = false;
-                    fishingRod.CastLine(currentPower, currentAngle);
+                    fishingRod.CastLine(1.0f - currentPower, currentAngle);
                     currentState = fishingState.none;
                 }
-
 
                 break;
 
