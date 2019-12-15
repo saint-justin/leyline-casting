@@ -1994,6 +1994,11 @@ PrefabInstance:
       propertyPath: movementPattern
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 3549123939667962473, guid: 49fe56061904a014496933221c8e02d8,
+        type: 3}
+      propertyPath: type
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49fe56061904a014496933221c8e02d8, type: 3}
 --- !u!4 &867696448 stripped
