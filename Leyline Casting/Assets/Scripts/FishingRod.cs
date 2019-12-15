@@ -37,10 +37,10 @@ public class FishingRod : MonoBehaviour
         hookPrevPosition = hookPosition;
         hookVelocity = new Vector2(0.0f, 0.0f);
 
-        maxCastStrength = 3.0f;
-        lineStrength = 1.0f;
-        maxFishOnHook = 10;
-        lureRadius = 1.00f;
+        maxCastStrength = 8.0f;
+        lineStrength = 50.0f;
+        maxFishOnHook = 4;
+        lureRadius = 2.0f;
 
         finiteState = FishingState.Inactive;
         castStrength = 0.0f;

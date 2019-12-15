@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":2935.5380859375,"y":377.24053955078127,"z":-141.25},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":718.8770751953125,"orthographic":true}
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":141.26571655273438,"y":26.620607376098634,"z":-31.72148895263672},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":280.2474060058594,"orthographic":true}
+>>>>>>> origin/andrew-shop-values-and-upgrades
