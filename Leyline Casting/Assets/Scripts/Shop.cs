@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public static class UpgradeLevels
 {
@@ -54,34 +55,34 @@ public static class UpgradeLevels
 
     private static Upgrade[] maxCastStrength =
     {
-        new Upgrade(100, 3.0f),
-        new Upgrade(200, 6.0f),
-        new Upgrade(400, 9.0f),
-        new Upgrade(800, 12.0f),
+        new Upgrade(100, 10.0f),
+        new Upgrade(200, 12.0f),
+        new Upgrade(400, 14.0f),
+        new Upgrade(800, 16.0f),
     };
 
     private static Upgrade[] lineStrength =
     {
-        new Upgrade(100, 1.0f),
-        new Upgrade(200, 2.0f),
-        new Upgrade(400, 3.0f),
-        new Upgrade(800, 4.0f),
+        new Upgrade(100, 150.0f),
+        new Upgrade(200, 500.0f),
+        new Upgrade(400, 900.0f),
+        new Upgrade(800, 1800.0f),
     };
 
     private static Upgrade[] maxFish =
     {
-        new Upgrade(100, 4.0f),
-        new Upgrade(200, 8.0f),
-        new Upgrade(400, 12.0f),
-        new Upgrade(800, 16.0f),
+        new Upgrade(100, 8.0f),
+        new Upgrade(200, 12.0f),
+        new Upgrade(400, 16.0f),
+        new Upgrade(800, 20.0f),
     };
 
     private static Upgrade[] lureRadius =
     {
-        new Upgrade(100, 1.0f),
-        new Upgrade(200, 1.5f),
-        new Upgrade(400, 2.0f),
-        new Upgrade(800, 2.5f),
+        new Upgrade(100, 3.0f),
+        new Upgrade(200, 4.0f),
+        new Upgrade(400, 5.0f),
+        new Upgrade(800, 6.0f),
     };
 }
 
@@ -107,7 +108,7 @@ public class Shop : MonoBehaviour
     // index 3 is lr (lure)
     public int[] upgradeIndices = { 0, 0, 0, 0 };
 
-    // objects
+    // objects for updating amounts
     public GameObject goldManagerObject;
     public GameObject fishingRodObject;
 
@@ -115,17 +116,42 @@ public class Shop : MonoBehaviour
     private Gold_Manager goldManager;
     private FishingRod fishingRod;
 
+    // game object costs
+    public GameObject rodCost;
+    public GameObject lineCost;
+    public GameObject hookCost;
+    public GameObject lureCost;
+
+    // text component references
+    private Text goldAmt;
+    private Text[] upgradeCosts;
+
     // Start is called before the first frame update
     void Start()
     {
         goldManager = goldManagerObject.GetComponent<Gold_Manager>();
         fishingRod = fishingRodObject.GetComponent<FishingRod>();
+
+        goldAmt = GameObject.Find("Current Gold").GetComponent<Text>();
+        upgradeCosts = new Text[]{
+            rodCost.GetComponent<Text>(),
+            lineCost.GetComponent<Text>(),
+            hookCost.GetComponent<Text>(),
+            lureCost.GetComponent<Text>()
+        };
+
+        for(int i = 0; i < upgradeCosts.Length; i++)
+        {
+            upgradeCosts[i].text = 
+                $"${UpgradeLevels.GetUpgrade((UpgradeLevels.Types)i, upgradeIndices[i]).cost}";
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        // do i actually put this here?
+        goldAmt.text = $"Gold: ${goldManager.gold}";
     }
 
     /// <summary>
@@ -159,6 +185,8 @@ public class Shop : MonoBehaviour
 
         // increase index of upgrade
         upgradeIndices[(int)typeOfUpgrade]++;
+        upgradeCosts[(int)typeOfUpgrade].text =
+            $"${UpgradeLevels.GetUpgrade(typeOfUpgrade, upgradeIndices[(int)typeOfUpgrade]).cost}";
     }
 
     // same as above function, works with integral representation of enum instead
