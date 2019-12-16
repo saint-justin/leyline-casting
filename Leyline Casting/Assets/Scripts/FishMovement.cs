@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum MovementPattern { LeftRight, CircleCW, CircleCCW, Wander };
+public enum MovementPattern { LeftRight, CircleCW, CircleCCW, Wander, Hooked, LineBreak, Idle };
 
 public class FishMovement : MonoBehaviour
 {
@@ -10,6 +10,7 @@ public class FishMovement : MonoBehaviour
 
     Fish fishForGold = new Fish();
     public Gold_Manager goldManager;
+    public FishingRod fishingRod;
 
     // Variables for moving
     public Vector2 fishPosition;
@@ -17,6 +18,7 @@ public class FishMovement : MonoBehaviour
     public float fishSpeed = 2.0f;
     public float fishWeight = 0.0f;
     public List<Vector2> referencePoints;
+    public bool chasingHook;
     //public int gold;
 
 
@@ -33,6 +35,7 @@ public class FishMovement : MonoBehaviour
     {
         fishPosition = transform.position;
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+        fishingRod = GameObject.Find("fishing_pole").GetComponent<FishingRod>();
 
         fishSpeed = Random.Range(1.5f, 2.5f);
 
@@ -50,11 +53,10 @@ public class FishMovement : MonoBehaviour
         {
             case MovementPattern.LeftRight: 
                 // Gets a reference to the left and right positions of the screen
-                // TODO: Change this to reflect fishPosition when the camera moves
                 if(referencePoints.Count == 0)
                 {
-                    referencePoints.Insert(0, new Vector2(-4.0f, fishPosition.y));
-                    referencePoints.Insert(1, new Vector2(4.0f, fishPosition.y));
+                    referencePoints.Insert(0, fishPosition + new Vector2(-8.0f, 0));
+                    referencePoints.Insert(1, fishPosition + new Vector2(8.0f, 0));
                 }
                 // Start with a random position on the pattern
                 patternInt = Random.Range(0, referencePoints.Count);
@@ -154,7 +156,7 @@ public class FishMovement : MonoBehaviour
 
         UpdateDirectionAndSpeed();
 
-        GameObject.Find("fishing_pole").GetComponent<FishingRod>().oceanFish.Add(gameObject);
+        fishingRod.oceanFish.Add(gameObject);
     }
 
     // Update is called once per frame
@@ -171,6 +173,51 @@ public class FishMovement : MonoBehaviour
     /// </summary>
     public void UpdateFish()
     {
+        float dist = Vector2.Distance(fishPosition, fishingRod.hookPosition);
+        if (fishingRod.finiteState == FishingState.Rising && dist < fishingRod.lureRadius)
+        {
+            // The closer the fish gets to the fishing rod, the more it attracts
+            direction = Vector2.Lerp((fishingRod.hookPosition - fishPosition).normalized,
+                                    (currentObjective - fishPosition).normalized, 
+                                     dist / fishingRod.lureRadius);
+            chasingHook = true;
+        }
+        // The hook moved out of range of the fish, find the nearest objective
+        else if(chasingHook)
+        {
+            chasingHook = false;
+            switch(movementPattern)
+            {
+                case MovementPattern.LeftRight:
+                case MovementPattern.CircleCW:
+                case MovementPattern.CircleCCW:
+                    // Start moving towards the closest reference point
+                    patternInt = 0;
+                    float tempDist = Vector2.Distance(fishPosition, referencePoints[patternInt]);
+                    for(int i = 0; i < referencePoints.Count; i++)
+                    {
+                        if(Vector2.Distance(fishPosition, referencePoints[i]) < tempDist)
+                        {
+                            patternInt = i;
+                            tempDist = Vector2.Distance(fishPosition, referencePoints[patternInt]);
+                        }
+                    }
+                    UpdateDirectionAndSpeed();
+                    break;
+                case MovementPattern.Wander:
+                    UpdateDirectionAndSpeed();
+                    break;
+                case MovementPattern.Hooked:
+                    fishPosition = fishingRod.hookPosition;
+                    break;
+                case MovementPattern.Idle:
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        // Move the fish towards the next reference point
         switch(movementPattern)
         {
             case MovementPattern.LeftRight:
@@ -193,6 +240,12 @@ public class FishMovement : MonoBehaviour
                 {
                     UpdateDirectionAndSpeed();
                 }
+                break;
+            case MovementPattern.Hooked:
+                fishPosition = fishingRod.hookPosition;
+                UpdateDirectionAndSpeed();
+                break;
+            case MovementPattern.Idle:
                 break;
             default:
                 break;
@@ -258,6 +311,12 @@ public class FishMovement : MonoBehaviour
                     currentSpeed = fishSpeed;
                 }
                 break;
+            case MovementPattern.Hooked:
+                direction = new Vector2(0.0f, 0.0f);
+                currentSpeed = 0.0f;
+                break;
+            case MovementPattern.Idle:
+                break;
             default:
                 break;
         }
@@ -268,11 +327,11 @@ public class FishMovement : MonoBehaviour
     /// </summary>
     public void UpdateDirectionFlipX()
     {
-        if(direction.x < 0)
+        if(direction.x < -0.001f)
         {
             spriteRenderer.flipX = false;
         }
-        else if(direction.x > 0)
+        else if(direction.x > 0.001f)
         {
             spriteRenderer.flipX = true;
         }

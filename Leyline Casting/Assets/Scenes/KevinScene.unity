@@ -797,6 +797,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementPattern: 3
+  goldManager: {fileID: 0}
   fishPosition: {x: 0, y: 0}
   direction: {x: 0, y: 0}
   fishSpeed: 2
@@ -804,7 +805,6 @@ MonoBehaviour:
   referencePoints:
   - {x: -10, y: 0}
   - {x: 10, y: 0}
-  gold: 0
 --- !u!212 &423453232
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -987,6 +987,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementPattern: 0
+  goldManager: {fileID: 0}
   fishPosition: {x: 0, y: 0}
   direction: {x: 0, y: 0}
   fishSpeed: 2
@@ -994,7 +995,6 @@ MonoBehaviour:
   referencePoints:
   - {x: -10, y: 0}
   - {x: 10, y: 0}
-  gold: 0
 --- !u!212 &514883335
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1346,6 +1346,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementPattern: 0
+  goldManager: {fileID: 0}
   fishPosition: {x: 0, y: 0}
   direction: {x: 0, y: 0}
   fishSpeed: 2
@@ -1353,7 +1354,6 @@ MonoBehaviour:
   referencePoints:
   - {x: -10, y: 0}
   - {x: 10, y: 0}
-  gold: 0
 --- !u!114 &551835149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1522,7 +1522,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 650395181}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.01, y: -5.55, z: 3.25}
+  m_LocalPosition: {x: -0.01, y: -5.55, z: 5.43}
   m_LocalScale: {x: 0.391376, y: 0.4810011, z: 0.391376}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1760,7 +1760,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 747950980}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.054, y: 0.4, z: 2.6}
+  m_LocalPosition: {x: -0.054, y: 0.4, z: 4.98}
   m_LocalScale: {x: 0.36655802, y: 0.36655802, z: -61.85}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2051,6 +2051,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementPattern: 1
+  goldManager: {fileID: 0}
   fishPosition: {x: 0, y: 0}
   direction: {x: 0, y: 0}
   fishSpeed: 2
@@ -2058,7 +2059,6 @@ MonoBehaviour:
   referencePoints:
   - {x: -10, y: 0}
   - {x: 10, y: 0}
-  gold: 0
 --- !u!212 &915034994
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2907,6 +2907,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementPattern: 2
+  goldManager: {fileID: 0}
   fishPosition: {x: 0, y: 0}
   direction: {x: 0, y: 0}
   fishSpeed: 2
@@ -2914,7 +2915,6 @@ MonoBehaviour:
   referencePoints:
   - {x: -10, y: 0}
   - {x: 10, y: 0}
-  gold: 0
 --- !u!212 &1371413429
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3023,6 +3023,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementPattern: 2
+  goldManager: {fileID: 0}
   fishPosition: {x: 0, y: 0}
   direction: {x: 0, y: 0}
   fishSpeed: 2
@@ -3030,7 +3031,6 @@ MonoBehaviour:
   referencePoints:
   - {x: -10, y: 0}
   - {x: 10, y: 0}
-  gold: 0
 --- !u!212 &1386140182
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3139,6 +3139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementPattern: 3
+  goldManager: {fileID: 0}
   fishPosition: {x: 0, y: 0}
   direction: {x: 0, y: 0}
   fishSpeed: 2
@@ -3146,7 +3147,6 @@ MonoBehaviour:
   referencePoints:
   - {x: -10, y: 0}
   - {x: 10, y: 0}
-  gold: 0
 --- !u!212 &1425095582
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3255,6 +3255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementPattern: 3
+  goldManager: {fileID: 0}
   fishPosition: {x: 0, y: 0}
   direction: {x: 0, y: 0}
   fishSpeed: 2
@@ -3262,7 +3263,6 @@ MonoBehaviour:
   referencePoints:
   - {x: -10, y: 0}
   - {x: 10, y: 0}
-  gold: 0
 --- !u!212 &1438975771
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3557,6 +3557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementPattern: 1
+  goldManager: {fileID: 0}
   fishPosition: {x: 0, y: 0}
   direction: {x: 0, y: 0}
   fishSpeed: 2
@@ -3564,7 +3565,6 @@ MonoBehaviour:
   referencePoints:
   - {x: -10, y: 0}
   - {x: 10, y: 0}
-  gold: 0
 --- !u!212 &1578553634
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3859,6 +3859,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementPattern: 0
+  goldManager: {fileID: 0}
   fishPosition: {x: 0, y: 0}
   direction: {x: 0, y: 0}
   fishSpeed: 2
@@ -3866,7 +3867,6 @@ MonoBehaviour:
   referencePoints:
   - {x: -10, y: 0}
   - {x: 10, y: 0}
-  gold: 0
 --- !u!212 &1748248066
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4435,6 +4435,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementPattern: 3
+  goldManager: {fileID: 0}
   fishPosition: {x: 0, y: 0}
   direction: {x: 0, y: 0}
   fishSpeed: 2
@@ -4442,7 +4443,6 @@ MonoBehaviour:
   referencePoints:
   - {x: -10, y: 0}
   - {x: 10, y: 0}
-  gold: 0
 --- !u!212 &1960192592
 SpriteRenderer:
   m_ObjectHideFlags: 0
