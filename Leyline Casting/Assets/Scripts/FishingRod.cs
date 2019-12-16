@@ -21,6 +21,7 @@ public class FishingRod : MonoBehaviour
     // Variables for casting the hook
     public FishingState finiteState; // Finite state machine
     private float castStrength; // Initial speed of the fishing rood cast
+    private float lineWeight;
     private Vector2 castAngle; // Angle that the fishing rod should be cast at
     private float castTime; // Time counter used for calculating the exact location to position the hook over time
 
@@ -40,10 +41,10 @@ public class FishingRod : MonoBehaviour
         hookVelocity = new Vector2(0.0f, 0.0f);
 
 
-        maxCastStrength = 4.0f;
-        lineStrength = 1.0f;
-        maxFishOnHook = 10;
-        lureRadius = 6.00f;
+        maxCastStrength = 8.0f;
+        lineStrength = 50.0f;
+        maxFishOnHook = 4;
+        lureRadius = 2.0f;
 
         finiteState = FishingState.Inactive;
         castStrength = 0.0f;
@@ -103,6 +104,25 @@ public class FishingRod : MonoBehaviour
 
                     hookPosition += hookVelocity * Time.deltaTime;
                     hookVelocity -= hookVelocity.normalized * 3.0f * Time.deltaTime; // Reduces velocity by 1.0 per second
+
+                    if(hookPosition.x < -2.1f)
+                    {
+                        hookPosition.x = -2.1f;
+                        hookVelocity.x *= -0.8f;
+                        hookVelocity.y *= 0.8f;
+                    }
+                    else if(hookPosition.x > 2.7f)
+                    {
+                        hookPosition.x = 2.7f;
+                        hookVelocity.x *= -0.8f;
+                        hookVelocity.y *= 0.8f;
+                    }
+
+                    if(hookPosition.y < -68.0f)
+                    {
+                        hookPosition.y = -68.0f;
+                        hookVelocity.y = 0.0f;
+                    }
                 }
                 break;
             case FishingState.Rising:
@@ -145,7 +165,22 @@ public class FishingRod : MonoBehaviour
     /// </summary>
     private void DrawFishingLine()
     {
-        fishingLine.DrawLineInGameView(transform.position, hookPosition, Color.white);
+        // Draw the fishing line redder with more stress on it
+        float lineStress = hookedFish.Count / maxFishOnHook;
+        if(lineWeight / lineStrength > lineStress)
+        {
+            lineStress = lineWeight / lineStrength;
+        }
+        lineStress = (lineStress - 0.50f) * 2.0f;
+        if (lineStress < 0.0f)
+        {
+            lineStress = 0.0f;
+        }
+        if(lineStress > 1.0f)
+        {
+            lineStress = 1.0f;
+        }
+        fishingLine.DrawLineInGameView(transform.position, hookPosition, new Color(1, 1 - lineStress, 1 - lineStress, 1));
     }
 
     /// <summary>
@@ -161,7 +196,8 @@ public class FishingRod : MonoBehaviour
                 hookedFish.Add(oceanFish[i]);
                 oceanFish.Remove(oceanFish[i]);
                 i--;
-                if(hookedFish.Count > maxFishOnHook)
+                UpdateLineWeight();
+                if(hookedFish.Count > maxFishOnHook || lineWeight > lineStrength)
                 {
                     LineBreak();
                 }
@@ -170,12 +206,30 @@ public class FishingRod : MonoBehaviour
     }
 
     /// <summary>
+    /// Sets the weight of the line equal to the total weight of all fish
+    /// </summary>
+    private void UpdateLineWeight()
+    {
+        float weight = 0.0f;
+        foreach(GameObject fish in hookedFish)
+        {
+            weight += fish.GetComponent<Fish>().weight;
+        }
+    }
+
+    /// <summary>
     /// Removes all fish from the hook and breaks the line
     /// </summary>
     private void LineBreak()
     {
+        foreach(GameObject fish in hookedFish)
+        {
+            fish.GetComponent<FishMovement>().movementPattern = fish.GetComponent<FishMovement>().movementPatternOrig;
+            oceanFish.Add(fish);
+        }
         hookedFish.Clear();
-        // TODO: Visually break the fishing line
+        UpdateLineWeight();
+        hookPosition = hookInactivePosition;
     }
 
     /// <summary>

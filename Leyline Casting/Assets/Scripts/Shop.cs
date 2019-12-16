@@ -71,18 +71,18 @@ public static class UpgradeLevels
 
     private static Upgrade[] maxCastStrength =
     {
-        new Upgrade(100, 10.0f),
-        new Upgrade(200, 12.0f),
-        new Upgrade(400, 14.0f),
-        new Upgrade(800, 16.0f),
+        new Upgrade(100, 12.0f),
+        new Upgrade(200, 15.0f),
+        new Upgrade(400, 18.0f),
+        new Upgrade(800, 21.0f),
     };
 
     private static Upgrade[] lineStrength =
     {
         new Upgrade(100, 150.0f),
-        new Upgrade(200, 500.0f),
-        new Upgrade(400, 900.0f),
-        new Upgrade(800, 1800.0f),
+        new Upgrade(200, 300.0f),
+        new Upgrade(400, 500.0f),
+        new Upgrade(800, 1000.0f),
     };
 
     private static Upgrade[] maxFish =
@@ -95,10 +95,10 @@ public static class UpgradeLevels
 
     private static Upgrade[] lureRadius =
     {
-        new Upgrade(100, 3.0f),
-        new Upgrade(200, 4.0f),
-        new Upgrade(400, 5.0f),
-        new Upgrade(800, 6.0f),
+        new Upgrade(100, 4.0f),
+        new Upgrade(200, 5.0f),
+        new Upgrade(400, 6.0f),
+        new Upgrade(800, 8.0f),
     };
 }
 

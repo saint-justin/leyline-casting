@@ -40,4 +40,9 @@ public class LaunchShop : MonoBehaviour
         GuiManager.ToggleDisplay();
         Time.timeScale = 1.0f;
     }
+
+    public bool IsGamePaused()
+    {
+        return GamePaused;
+    }
 }

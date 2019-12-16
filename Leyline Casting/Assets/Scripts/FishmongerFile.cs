@@ -51,7 +51,8 @@ public enum FishType
     PinkFish,
     Chad, // BlueFormar.png
     MagiCarp, // totally not a rip off Orange.png
-    DogFish
+    DogFish,
+    TreasureChest
 }
 
 public class FishmongerFile : MonoBehaviour

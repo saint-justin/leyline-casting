@@ -6,11 +6,13 @@ public class shiftBg : MonoBehaviour
 {
     float startTime;
     float currentTime = 0;
+    Vector3 startLocation;
 
     // Start is called before the first frame update
     void Start()
     {
         startTime = Time.time;
+        startLocation = transform.position;
     }
 
     // Update is called once per frame
@@ -18,8 +20,6 @@ public class shiftBg : MonoBehaviour
     {
         currentTime += Time.deltaTime;
 
-        Vector3 pos = this.gameObject.transform.position;
-        pos.x += Mathf.Sin(currentTime) * 0.01f;
-        this.gameObject.transform.position = pos;
+        transform.position = new Vector3(startLocation.x + Mathf.Sin(currentTime) * 1.00f, transform.position.y, startLocation.z);
     }
 }

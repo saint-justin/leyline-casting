@@ -8,6 +8,7 @@ public class CastingUI_Manager : MonoBehaviour
     public GameObject powerBarParent;
     private GameObject powerBarIndicator;
     public FishingRod fishingRod;
+    public LaunchShop shopState;
 
     // Power and power indicator info
     private bool increasingPower = false;       // Used to denote if the power bar is moving up or down
@@ -38,6 +39,7 @@ public class CastingUI_Manager : MonoBehaviour
     void Start()
     {
         fishingRod = GameObject.Find("fishing_pole").GetComponent<FishingRod>();
+        shopState = GameObject.Find("Image").GetComponent<LaunchShop>();
         powerBarIndicator = powerBarParent.transform.GetChild(0).gameObject;
         angleBarIndicator = angleBarParent.transform.GetChild(0).gameObject;
 
@@ -65,7 +67,7 @@ public class CastingUI_Manager : MonoBehaviour
                 UpdatePowerBarPos();
 
                 // Checks for the end to powering
-                if (Input.GetMouseButtonDown(0))
+                if (Input.GetMouseButtonDown(0) && shopState.IsGamePaused() == false)
                 {
                     currentState = fishingState.angling;
 
@@ -97,7 +99,7 @@ public class CastingUI_Manager : MonoBehaviour
                 angleBarIndicator.transform.rotation = Quaternion.Euler(0.0f, 0.0f, Mathf.Lerp(-90.0f, 90.0f, currentAngle / 180.0f));
                 // Debug.Log(angleBarIndicator.transform.rotation.z);
 
-                if (Input.GetMouseButtonDown(0))
+                if (Input.GetMouseButtonDown(0) && shopState.IsGamePaused() == false)
                 {
                     // The angle and power are finalized
                     angleBarParent.GetComponent<SpriteRenderer>().enabled = false;
