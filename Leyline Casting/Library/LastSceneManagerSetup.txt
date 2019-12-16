@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Fish_Variant_Spawning.unity
+- path: Assets/Scenes/FishmongerFile.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

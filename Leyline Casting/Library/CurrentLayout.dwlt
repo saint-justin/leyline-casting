@@ -14,32 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
     x: 1920
     y: 43
     width: 1920
     height: 1007
-=======
-    x: -35
-    y: 107
-    width: 1904
-    height: 969
->>>>>>> 32a2996092598f38faaa0f6c4a8b3770f2f415ae
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
   m_MinSize: {x: 950, y: 544}
-=======
-    x: 0
-    y: 43
-    width: 1920
-    height: 997
-  m_ShowMode: 4
-  m_Title: 
-  m_RootView: {fileID: 6}
-  m_MinSize: {x: 950, y: 394}
->>>>>>> origin/andrew-failed-purchase-feedback
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -60,30 +42,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-<<<<<<< HEAD
-<<<<<<< HEAD
     width: 1920
     height: 957
-  m_MinSize: {x: 679, y: 494}
-  m_MaxSize: {x: 14002, y: 14044}
+  m_MinSize: {x: 683, y: 494}
+  m_MaxSize: {x: 14004, y: 14044}
   vertical: 0
-  controlID: 117
-=======
-    width: 1904
-    height: 919
-  m_MinSize: {x: 683, y: 344}
-  m_MaxSize: {x: 12008, y: 8044}
-  vertical: 0
-  controlID: 13
->>>>>>> 32a2996092598f38faaa0f6c4a8b3770f2f415ae
-=======
-    width: 1920
-    height: 947
-  m_MinSize: {x: 679, y: 344}
-  m_MaxSize: {x: 12004, y: 8044}
-  vertical: 0
-  controlID: 45
->>>>>>> origin/andrew-failed-purchase-feedback
+  controlID: 122
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -101,24 +65,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1531
     y: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
     width: 389
     height: 957
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
-=======
-    width: 386
-    height: 919
   m_MinSize: {x: 277, y: 72}
   m_MaxSize: {x: 4002, y: 4022}
->>>>>>> 32a2996092598f38faaa0f6c4a8b3770f2f415ae
-=======
-    width: 389
-    height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
->>>>>>> origin/andrew-failed-purchase-feedback
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -141,24 +91,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
     width: 379
     height: 579
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-=======
-    width: 376
-    height: 555
   m_MinSize: {x: 202, y: 222}
   m_MaxSize: {x: 4002, y: 4022}
->>>>>>> 32a2996092598f38faaa0f6c4a8b3770f2f415ae
-=======
-    width: 379
-    height: 572
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
->>>>>>> origin/andrew-failed-purchase-feedback
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -180,29 +116,12 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
     y: 579
     width: 1531
     height: 378
   m_MinSize: {x: 232, y: 272}
   m_MaxSize: {x: 10002, y: 10022}
   m_ActualView: {fileID: 13}
-=======
-    y: 555
-    width: 1518
-    height: 364
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-=======
-    y: 572
-    width: 1531
-    height: 375
-  m_MinSize: {x: 102, y: 122}
-  m_MaxSize: {x: 4002, y: 4022}
->>>>>>> origin/andrew-failed-purchase-feedback
-  m_ActualView: {fileID: 18}
->>>>>>> 32a2996092598f38faaa0f6c4a8b3770f2f415ae
   m_Panes:
   - {fileID: 13}
   - {fileID: 18}
@@ -229,8 +148,8 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1920
-    height: 997
-  m_MinSize: {x: 950, y: 394}
+    height: 1007
+  m_MinSize: {x: 950, y: 544}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &7
 MonoBehaviour:
@@ -270,7 +189,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 977
+    y: 987
     width: 1920
     height: 20
   m_MinSize: {x: 0, y: 0}
@@ -294,26 +213,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
     width: 1531
     height: 957
-  m_MinSize: {x: 404, y: 494}
+  m_MinSize: {x: 406, y: 494}
   m_MaxSize: {x: 10002, y: 14044}
-=======
-    width: 1518
-    height: 919
-  m_MinSize: {x: 406, y: 344}
-  m_MaxSize: {x: 8006, y: 8044}
->>>>>>> 32a2996092598f38faaa0f6c4a8b3770f2f415ae
-=======
-    width: 1531
-    height: 947
-  m_MinSize: {x: 404, y: 344}
-  m_MaxSize: {x: 8004, y: 8044}
->>>>>>> origin/andrew-failed-purchase-feedback
   vertical: 1
-  controlID: 46
+  controlID: 58
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -333,26 +238,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
     width: 1531
     height: 579
-  m_MinSize: {x: 404, y: 222}
-  m_MaxSize: {x: 8004, y: 4022}
-=======
-    width: 1518
-    height: 555
   m_MinSize: {x: 406, y: 222}
   m_MaxSize: {x: 8006, y: 4022}
->>>>>>> 32a2996092598f38faaa0f6c4a8b3770f2f415ae
-=======
-    width: 1531
-    height: 572
-  m_MinSize: {x: 404, y: 222}
-  m_MaxSize: {x: 8004, y: 4022}
->>>>>>> origin/andrew-failed-purchase-feedback
   vertical: 0
-  controlID: 47
+  controlID: 59
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -371,7 +262,7 @@ MonoBehaviour:
     x: 379
     y: 0
     width: 1152
-    height: 572
+    height: 579
   m_MinSize: {x: 204, y: 222}
   m_MaxSize: {x: 4004, y: 4022}
   m_ActualView: {fileID: 16}
@@ -428,17 +319,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
     x: 1920
     y: 652
     width: 1531
     height: 359
-=======
-    x: 8
-    y: 648
-    width: 1518
-    height: 345
->>>>>>> 32a2996092598f38faaa0f6c4a8b3770f2f415ae
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -452,32 +336,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Textures
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Textures
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: D:\Andrew\Documents\College HW\320\leyline-casting\Leyline Casting
+  m_LastProjectPath: D:\_GIT_REPOS\Leyline Casting\Leyline Casting
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_SelectedIDs: 2e2b0000
-    m_LastClickedID: 11054
-    m_ExpandedIDs: 000000001a290000182c000000ca9a3b
-=======
-    m_SelectedIDs: 3c2b0000
-    m_LastClickedID: 11068
-    m_ExpandedIDs: 000000002c290000262c000000ca9a3b
->>>>>>> 32a2996092598f38faaa0f6c4a8b3770f2f415ae
-=======
-    m_SelectedIDs: 2e2b0000
-    m_LastClickedID: 11054
-    m_ExpandedIDs: 000000001a290000182c000000ca9a3b
->>>>>>> origin/andrew-failed-purchase-feedback
+    m_SelectedIDs: 342c0000
+    m_LastClickedID: 11316
+    m_ExpandedIDs: 00000000362900004a2b0000342c0000ce49000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -505,15 +377,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_ExpandedIDs: 000000001a290000182c0000
-=======
-    m_ExpandedIDs: 000000002c290000262c0000
->>>>>>> 32a2996092598f38faaa0f6c4a8b3770f2f415ae
-=======
-    m_ExpandedIDs: 000000001a290000182c0000
->>>>>>> origin/andrew-failed-purchase-feedback
+    m_ExpandedIDs: 0000000036290000342c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -538,21 +402,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-<<<<<<< HEAD
-<<<<<<< HEAD
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-=======
-    m_SelectedInstanceIDs: dc2d0000
-    m_LastClickedInstanceID: 11740
-    m_HadKeyboardFocusLastEvent: 0
->>>>>>> 32a2996092598f38faaa0f6c4a8b3770f2f415ae
-=======
-    m_SelectedInstanceIDs: ce2d0000
-    m_LastClickedInstanceID: 11726
-    m_HadKeyboardFocusLastEvent: 1
->>>>>>> origin/andrew-failed-purchase-feedback
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -569,7 +421,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 5}
+      m_ClientGUIView: {fileID: 0}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -601,24 +453,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
     x: 3451
     y: 73
     width: 387
     height: 938
-=======
-    x: 1483
-    y: 137
-    width: 384
-    height: 900
->>>>>>> 32a2996092598f38faaa0f6c4a8b3770f2f415ae
-=======
-    x: 1531
-    y: 73
-    width: 387
-    height: 928
->>>>>>> origin/andrew-failed-purchase-feedback
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
   m_ObjectsLockedBeforeSerialization: []
@@ -651,57 +489,31 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
     x: 1920
     y: 73
     width: 379
     height: 560
-=======
-    x: -35
-    y: 137
-    width: 376
-    height: 536
->>>>>>> 32a2996092598f38faaa0f6c4a8b3770f2f415ae
-=======
-    x: 0
-    y: 73
-    width: 379
-    height: 553
->>>>>>> origin/andrew-failed-purchase-feedback
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-<<<<<<< HEAD
-<<<<<<< HEAD
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 8efbffff642c0000c42d0000
-=======
-      m_SelectedIDs: 742d0000
-      m_LastClickedID: 11636
-      m_ExpandedIDs: 40fbffff722c0000
->>>>>>> 32a2996092598f38faaa0f6c4a8b3770f2f415ae
-=======
-      m_SelectedIDs: 662d0000
-      m_LastClickedID: 11622
-      m_ExpandedIDs: 8efbffff642c0000
->>>>>>> origin/andrew-failed-purchase-feedback
+      m_ExpandedIDs: 4886ffffd6a6ffffccabffff1eadfffff6d1ffff08e2ffff6afbffffbe2c0000902d0000004800000a480000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Button
+        m_OriginalName: Button
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -31160
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -710,7 +522,7 @@ MonoBehaviour:
     m_LockTracker:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
-  m_WindowGUID: 2269576cc8331be46976a2aca3453850
+  m_WindowGUID: 1747780804a3eaf4d842fee21d6b66be
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -732,27 +544,13 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
     x: 2299
     y: 73
     width: 1150
     height: 560
-=======
-    x: 341
-    y: 137
-    width: 1140
-    height: 536
->>>>>>> 32a2996092598f38faaa0f6c4a8b3770f2f415ae
-=======
-    x: 379
-    y: 73
-    width: 1150
-    height: 553
->>>>>>> origin/andrew-failed-purchase-feedback
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
-  m_WindowGUID: 2377eef9857547a40992b160cfd6aded
+  m_WindowGUID: 1cbe846b744f4454181a7631dc867873
   m_Gizmos: 1
   m_SceneIsLit: 1
   m_SceneLighting: 1
@@ -761,15 +559,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-<<<<<<< HEAD
-    m_Target: {x: -11.969809, y: 382.33572, z: -317.875}
+    m_Target: {x: 154.9044, y: 212.20169, z: -339.125}
     speed: 2
-    m_Value: {x: -11.969809, y: 382.33572, z: -317.875}
-=======
-    m_Target: {x: 3033.0095, y: 189.41792, z: -67.691696}
-    speed: 2
-    m_Value: {x: 3033.0095, y: 189.41792, z: -67.691696}
->>>>>>> 32a2996092598f38faaa0f6c4a8b3770f2f415ae
+    m_Value: {x: 154.9044, y: 212.20169, z: -339.125}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -802,15 +594,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-<<<<<<< HEAD
-    m_Target: 933.762
+    m_Target: 590.9197
     speed: 2
-    m_Value: 893.5522
-=======
-    m_Target: 909.30457
-    speed: 2
-    m_Value: 909.30457
->>>>>>> 32a2996092598f38faaa0f6c4a8b3770f2f415ae
+    m_Value: 565.4734
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -828,7 +614,7 @@ MonoBehaviour:
     m_DynamicClip: 1
     m_OcclusionCulling: 0
   m_ShowGlobalGrid: 1
-  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+  m_LastSceneViewRotation: {x: -0.22769848, y: 0.02832863, z: -0.0066262544, w: -0.97330946}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -856,17 +642,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
     x: 2299
     y: 73
     width: 1150
     height: 560
-=======
-    x: 384
-    y: 93
-    width: 1140
-    height: 536
->>>>>>> 32a2996092598f38faaa0f6c4a8b3770f2f415ae
   m_ViewDataDictionary: {fileID: 0}
   m_VSyncEnabled: 0
   m_MaximizeOnPlay: 0
@@ -879,10 +658,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -146
-    m_HBaseRangeMax: 146
-    m_VBaseRangeMin: -259.5
-    m_VBaseRangeMax: 259.5
+    m_HBaseRangeMin: -152.5
+    m_HBaseRangeMax: 152.5
+    m_VBaseRangeMin: -271.5
+    m_VBaseRangeMax: 271.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -900,25 +679,25 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 17
-      width: 1140
-      height: 519
+      width: 1150
+      height: 543
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 570, y: 259.5}
+    m_Translation: {x: 575, y: 271.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -570
-      y: -259.5
-      width: 1140
-      height: 519
+      x: -575
+      y: -271.5
+      width: 1150
+      height: 543
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
-  m_LastWindowPixelSize: {x: 1140, y: 536}
+  m_LastWindowPixelSize: {x: 1150, y: 560}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000001000100000100
@@ -944,22 +723,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
     x: 1920
     y: 652
     width: 1531
     height: 359
-=======
-    x: -35
-    y: 692
-    width: 1518
-    height: 345
->>>>>>> 32a2996092598f38faaa0f6c4a8b3770f2f415ae
-=======
-    x: 0
-    y: 645
-    width: 1531
-    height: 356
->>>>>>> origin/andrew-failed-purchase-feedback
   m_ViewDataDictionary: {fileID: 0}

@@ -27,15 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3549123939667962485}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_LocalPosition: {x: -1.5257621, y: -51.872604, z: 0}
-=======
   m_LocalPosition: {x: -1.9581842, y: -44.993828, z: 0}
->>>>>>> origin/andrew-shop-values-and-upgrades
-=======
-  m_LocalPosition: {x: 1.3533893, y: -49.73957, z: 0}
->>>>>>> origin/final-push
   m_LocalScale: {x: 0.10579, y: 0.10579, z: 0.10579}
   m_Children: []
   m_Father: {fileID: 0}
