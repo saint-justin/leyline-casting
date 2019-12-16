@@ -39,7 +39,7 @@ public class CastingUI_Manager : MonoBehaviour
     void Start()
     {
         fishingRod = GameObject.Find("fishing_pole").GetComponent<FishingRod>();
-        shopState = GameObject.Find("Image").GetComponent<LaunchShop>();
+        shopState = GameObject.Find("ShopIcon").GetComponent<LaunchShop>();
         powerBarIndicator = powerBarParent.transform.GetChild(0).gameObject;
         angleBarIndicator = angleBarParent.transform.GetChild(0).gameObject;
 
