@@ -302,6 +302,8 @@ public class FishMovement : MonoBehaviour
                 return Random.Range(2.0f, 12.0f);
             case FishType.Chad:
                 return Random.Range(70.0f, 96.0f);
+            case FishType.PinkFish:
+                return Random.Range(8.0f, 11.0f);
             default:
                 return 0.0f;
         }

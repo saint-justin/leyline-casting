@@ -71,6 +71,22 @@ public class Gold_Manager : MonoBehaviour
             }
         }
 
+        else if (type == FishType.PinkFish) // range is from 8 to 11 pounds
+        {
+            if (weight == 7.0f)
+            {
+                gold = gold + 35;
+            }
+            else if (weight >= 5.9f && weight != 7.0f)
+            {
+                gold = gold + 20;
+            }
+            else
+            {
+                gold = gold + 22;
+            }
+        }
+
         else if (type == FishType.MagiCarp) // range is from 1 to 6 pounds
         {
             if (weight == 6.0f)

@@ -48,6 +48,7 @@ public enum FishType
     WooMango, // Yellow,png
     AngleLilac, // Lilac.png
     ToxicBlockhead, // Green.png
+    PinkFish,
     Chad, // BlueFormar.png
     MagiCarp, // totally not a rip off Orange.png
     DogFish
