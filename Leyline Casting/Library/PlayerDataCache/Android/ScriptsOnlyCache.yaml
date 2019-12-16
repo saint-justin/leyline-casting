@@ -4,6 +4,7 @@ ScriptsOnlyBuild:
     - Camera_Manager
     - CastingUI_Manager
     - Fish
+    - FishFileUI
     - FishMovement
     - Fish_Manager
     - FishingRod
@@ -12,6 +13,7 @@ ScriptsOnlyBuild:
     - MenuMethods
     - Shop
     - ShopGuiManager
+    - Tutorial
     - fishReeled
     - shiftBg
     Unity.TextMeshPro.dll:
@@ -19,6 +21,7 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshPro
     - TMPro.TextMeshProUGUI
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -49,25 +52,25 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9394}
-    - Class: 114
-      Script: {instanceID: 9396}
+      Script: {instanceID: 9400}
     - Class: 114
       Script: {instanceID: 9402}
     - Class: 114
       Script: {instanceID: 9408}
     - Class: 114
-      Script: {instanceID: 9416}
+      Script: {instanceID: 9414}
     - Class: 114
-      Script: {instanceID: 9452}
+      Script: {instanceID: 9422}
     - Class: 114
-      Script: {instanceID: 9454}
+      Script: {instanceID: 9458}
     - Class: 114
-      Script: {instanceID: 10058}
+      Script: {instanceID: 9460}
     - Class: 114
-      Script: {instanceID: 10186}
+      Script: {instanceID: 10064}
     - Class: 114
-      Script: {instanceID: 10326}
+      Script: {instanceID: 10192}
+    - Class: 114
+      Script: {instanceID: 10332}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -95,6 +98,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 28
       Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
     - Class: 81
@@ -108,43 +115,51 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9336}
+      Script: {instanceID: 9342}
     - Class: 114
-      Script: {instanceID: 9394}
-    - Class: 114
-      Script: {instanceID: 9396}
+      Script: {instanceID: 9400}
     - Class: 114
       Script: {instanceID: 9402}
     - Class: 114
       Script: {instanceID: 9408}
     - Class: 114
-      Script: {instanceID: 9416}
+      Script: {instanceID: 9414}
     - Class: 114
-      Script: {instanceID: 9452}
+      Script: {instanceID: 9422}
     - Class: 114
-      Script: {instanceID: 9454}
+      Script: {instanceID: 9458}
     - Class: 114
-      Script: {instanceID: 9636}
+      Script: {instanceID: 9460}
     - Class: 114
-      Script: {instanceID: 9728}
+      Script: {instanceID: 9642}
     - Class: 114
-      Script: {instanceID: 9822}
+      Script: {instanceID: 9734}
     - Class: 114
-      Script: {instanceID: 9928}
+      Script: {instanceID: 9828}
     - Class: 114
-      Script: {instanceID: 9930}
+      Script: {instanceID: 9934}
     - Class: 114
-      Script: {instanceID: 9932}
+      Script: {instanceID: 9936}
     - Class: 114
-      Script: {instanceID: 10008}
+      Script: {instanceID: 9938}
     - Class: 114
-      Script: {instanceID: 10072}
+      Script: {instanceID: 10014}
     - Class: 114
-      Script: {instanceID: 10128}
+      Script: {instanceID: 10064}
     - Class: 114
-      Script: {instanceID: 10130}
+      Script: {instanceID: 10078}
     - Class: 114
-      Script: {instanceID: 10174}
+      Script: {instanceID: 10134}
+    - Class: 114
+      Script: {instanceID: 10136}
+    - Class: 114
+      Script: {instanceID: 10180}
+    - Class: 114
+      Script: {instanceID: 10332}
+    - Class: 114
+      Script: {instanceID: 10470}
+    - Class: 114
+      Script: {instanceID: 10598}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -183,25 +198,27 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9394}
+      Script: {instanceID: 9312}
     - Class: 114
-      Script: {instanceID: 9396}
+      Script: {instanceID: 9400}
     - Class: 114
       Script: {instanceID: 9402}
     - Class: 114
       Script: {instanceID: 9408}
     - Class: 114
-      Script: {instanceID: 9416}
+      Script: {instanceID: 9414}
     - Class: 114
-      Script: {instanceID: 9452}
+      Script: {instanceID: 9422}
     - Class: 114
-      Script: {instanceID: 9454}
+      Script: {instanceID: 9458}
     - Class: 114
-      Script: {instanceID: 10058}
+      Script: {instanceID: 9460}
     - Class: 114
-      Script: {instanceID: 10186}
+      Script: {instanceID: 10064}
     - Class: 114
-      Script: {instanceID: 10326}
+      Script: {instanceID: 10192}
+    - Class: 114
+      Script: {instanceID: 10332}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -240,29 +257,29 @@ ScriptsOnlyBuild:
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9394}
-    - Class: 114
-      Script: {instanceID: 9396}
+      Script: {instanceID: 9400}
     - Class: 114
       Script: {instanceID: 9402}
     - Class: 114
       Script: {instanceID: 9408}
     - Class: 114
-      Script: {instanceID: 9416}
+      Script: {instanceID: 9414}
     - Class: 114
-      Script: {instanceID: 9452}
+      Script: {instanceID: 9422}
     - Class: 114
-      Script: {instanceID: 9454}
+      Script: {instanceID: 9458}
     - Class: 114
-      Script: {instanceID: 9764}
+      Script: {instanceID: 9460}
     - Class: 114
-      Script: {instanceID: 10058}
+      Script: {instanceID: 9770}
     - Class: 114
-      Script: {instanceID: 10068}
+      Script: {instanceID: 10064}
     - Class: 114
-      Script: {instanceID: 10326}
+      Script: {instanceID: 10074}
     - Class: 114
-      Script: {instanceID: 10398}
+      Script: {instanceID: 10332}
+    - Class: 114
+      Script: {instanceID: 10404}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -280,16 +297,16 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
-      Hash: e9ff88df069778493e6ca1a2ba048cd5
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: FishmongerFile
-  - hash:
-      serializedVersion: 2
       Hash: 984dcc0ba3707b7691fbdca8ff508d28
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SelectionCaret
+  - hash:
+      serializedVersion: 2
+      Hash: e0d17eda0100d7781c3f2e80395ce8a9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FishFileUI
   - hash:
       serializedVersion: 2
       Hash: 87ff43d2baf3385cba327d8f803a4ebb
@@ -784,7 +801,7 @@ ScriptsOnlyBuild:
     className: ControlTrack
   - hash:
       serializedVersion: 2
-      Hash: e3aa2a6c13cf10cc6b926232880647b7
+      Hash: a02be84a0948b22c67b3717a4bb72135
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FishingRod
@@ -838,7 +855,7 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
-      Hash: 774b58b0d67628a915a04a4452651653
+      Hash: 2355733638b8bd566730490da67b9f98
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FishMovement
@@ -916,7 +933,7 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
-      Hash: 1465352a42aef2f36add75779f1de1e5
+      Hash: e666e9e267cf5fa8af2f2d61266590d0
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CastingUI_Manager
@@ -1004,10 +1021,16 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 0f223680d301fb28b1ac675c26c4fb25
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Tutorial
   platform: 13
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
-  - Assets/Scenes/FishmongerFile.unity
-  - Assets/Scenes/Credits.unity
   - Assets/Scenes/Fish_Variant_Spawning.unity
-  playerPath: D:/_GIT_REPOS/Leyline Casting/Leyline Casting/beans.apk
+  - Assets/Scenes/Credits.unity
+  - Assets/Scenes/FishmongerFile.unity
+  playerPath: D:/_GIT_REPOS/Leyline Casting/BUILDS/build_12-16-19.apk
