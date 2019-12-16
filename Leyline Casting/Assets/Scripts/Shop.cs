@@ -53,6 +53,22 @@ public static class UpgradeLevels
         }
     }
 
+    public static int GetUpgradesLength(Types type)
+    {
+        switch (type)
+        {
+            case Types.MaxCastStrength:
+            default:
+                return maxCastStrength.Length;
+            case Types.LineStrength:
+                return lineStrength.Length;
+            case Types.MaxFish:
+                return maxFish.Length;
+            case Types.LureRadius:
+                return maxCastStrength.Length;
+        }
+    }
+
     private static Upgrade[] maxCastStrength =
     {
         new Upgrade(100, 10.0f),
@@ -150,7 +166,7 @@ public class Shop : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // do i actually put this here?
+        // might be updating this more than it needs to by having this in update
         goldAmt.text = $"Gold: ${goldManager.gold}";
     }
 
@@ -160,18 +176,20 @@ public class Shop : MonoBehaviour
     /// <param name="typeOfUpgrade">Part to upgrade</param>
     public void AttemptPurchase(UpgradeLevels.Types typeOfUpgrade)
     {
+        // check if there are anymore upgrades left
+        // might want to move some of this into SetUpgrade if 
+        // # of upgrades per obj becomes variable
+        if (upgradeIndices[(int)typeOfUpgrade] >= UpgradeLevels.GetUpgradesLength(typeOfUpgrade))
+            return; // if no future upgrade exists don't do anything... no upgrade is left
+
+
         // player/gold manager check if there's enough money for the next upgrade
         // if money is less than value, do nothing
-        if(goldManager.gold < UpgradeLevels.GetUpgrade(typeOfUpgrade, upgradeIndices[(int)typeOfUpgrade]).cost)
+        if (goldManager.gold < UpgradeLevels.GetUpgrade(typeOfUpgrade, upgradeIndices[(int)typeOfUpgrade]).cost)
             return;
 
         Debug.Log(typeOfUpgrade);
 
-        // check if there are anymore upgrades left
-        // might want to move some of this into SetUpgrade if 
-        // # of upgrades per obj becomes variable
-        if (upgradeIndices[(int)typeOfUpgrade] >= 3)
-            return; // if no future upgrade exists don't do anything... no upgrade is left
 
         // subtract the cost of the upgrade from the player's current gold tally
         goldManager.SubtractGold(UpgradeLevels.GetUpgrade(typeOfUpgrade, upgradeIndices[(int)typeOfUpgrade]).cost);
@@ -185,8 +203,13 @@ public class Shop : MonoBehaviour
 
         // increase index of upgrade
         upgradeIndices[(int)typeOfUpgrade]++;
-        upgradeCosts[(int)typeOfUpgrade].text =
-            $"${UpgradeLevels.GetUpgrade(typeOfUpgrade, upgradeIndices[(int)typeOfUpgrade]).cost}";
+
+        // set cost text
+        if(upgradeIndices[(int)typeOfUpgrade] < UpgradeLevels.GetUpgradesLength(typeOfUpgrade))
+            upgradeCosts[(int)typeOfUpgrade].text =
+                $"${UpgradeLevels.GetUpgrade(typeOfUpgrade, upgradeIndices[(int)typeOfUpgrade]).cost}";
+        else
+            upgradeCosts[(int)typeOfUpgrade].text = "$---";
     }
 
     // same as above function, works with integral representation of enum instead
