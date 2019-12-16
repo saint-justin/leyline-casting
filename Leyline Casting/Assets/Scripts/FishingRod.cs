@@ -107,12 +107,24 @@ public class FishingRod : MonoBehaviour
                     + new Vector2(0.0f, 2.0f) * 0.1f;
                 if (hookPosition.y > transform.position.y - 1.0f)
                 {
+                    Catch newCatch = new Catch();
                     foreach (GameObject fish in hookedFish)
                     {
+                        // collect money for fish
                         FishMovement fishComp = fish.GetComponent<FishMovement>();
                         fishComp.goldManager.ReturnGoldByWeight(fish.GetComponent<Fish>().type, fishComp.fishWeight);
+
+                        // get fish weight and add it to fish object
+                        Fish fishData = fish.GetComponent<Fish>();
+                        fishData.weight = fishComp.fishWeight;
+
+                        // add fish obj to catch
+                        newCatch.fish.Add(fish.GetComponent<Fish>());
+
+                        // get rid of caught fish from scene
                         Destroy(fish);
                     }
+                    FishmongerFile.UpdateFishmongerFile(newCatch);
                     hookedFish.Clear();
 
                     hookPosition = hookInactivePosition;
