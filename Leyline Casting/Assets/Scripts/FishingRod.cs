@@ -39,10 +39,17 @@ public class FishingRod : MonoBehaviour
         hookPrevPosition = hookPosition;
         hookVelocity = new Vector2(0.0f, 0.0f);
 
+<<<<<<< HEAD
         maxCastStrength = 8.0f;
         lineStrength = 50.0f;
         maxFishOnHook = 4;
         lureRadius = 2.0f;
+=======
+        maxCastStrength = 4.0f;
+        lineStrength = 1.0f;
+        maxFishOnHook = 10;
+        lureRadius = 6.00f;
+>>>>>>> origin/Kevin-Fishing
 
         finiteState = FishingState.Inactive;
         castStrength = 0.0f;
@@ -154,8 +161,9 @@ public class FishingRod : MonoBehaviour
     {
         for(int i = 0; i < oceanFish.Count; i++)
         {
-            if(Vector2.Distance(oceanFish[i].transform.position, new Vector2(hookPosition.x, hookPosition.y)) <= lureRadius)
+            if(Vector2.Distance(oceanFish[i].transform.position, new Vector2(hookPosition.x, hookPosition.y)) <= 1.0f)
             {
+                oceanFish[i].GetComponent<FishMovement>().movementPattern = MovementPattern.Hooked;
                 hookedFish.Add(oceanFish[i]);
                 oceanFish.Remove(oceanFish[i]);
                 i--;

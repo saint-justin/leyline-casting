@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Fish_Variant_Spawning.unity
+=======
+- path: Assets/Scenes/KevinScene.unity
+>>>>>>> origin/Kevin-Fishing
   isLoaded: 1
   isActive: 1
   isSubScene: 0
