@@ -179,10 +179,10 @@ MonoBehaviour:
   upgradeIndices: 00000000000000000000000000000000
   goldManagerObject: {fileID: 1804473945}
   fishingRodObject: {fileID: 1531757635}
-  rodCost: {fileID: 1532834872}
-  lineCost: {fileID: 1754383042}
-  hookCost: {fileID: 540320493}
-  lureCost: {fileID: 590034141}
+  rodButton: {fileID: 1368666062}
+  lineButton: {fileID: 1287386781}
+  hookButton: {fileID: 1772089862}
+  lureButton: {fileID: 675018323}
 --- !u!1 &101144059
 GameObject:
   m_ObjectHideFlags: 0
