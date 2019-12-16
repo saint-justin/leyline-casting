@@ -7,6 +7,7 @@ public enum MovementPattern { LeftRight, CircleCW, CircleCCW, Wander, Hooked, Li
 public class FishMovement : MonoBehaviour
 {
     public MovementPattern movementPattern = MovementPattern.LeftRight;
+    public MovementPattern movementPatternOrig;
 
     Fish fishForGold = new Fish();
     public Gold_Manager goldManager;
@@ -153,6 +154,7 @@ public class FishMovement : MonoBehaviour
             default:
                 break;
         }
+        movementPatternOrig = movementPattern;
 
         UpdateDirectionAndSpeed();
 
@@ -174,7 +176,7 @@ public class FishMovement : MonoBehaviour
     public void UpdateFish()
     {
         float dist = Vector2.Distance(fishPosition, fishingRod.hookPosition);
-        if (fishingRod.finiteState == FishingState.Rising && dist < fishingRod.lureRadius)
+        if (fishingRod.finiteState != FishingState.Inactive && dist < fishingRod.lureRadius)
         {
             // The closer the fish gets to the fishing rod, the more it attracts
             direction = Vector2.Lerp((fishingRod.hookPosition - fishPosition).normalized,
@@ -211,6 +213,10 @@ public class FishMovement : MonoBehaviour
                     fishPosition = fishingRod.hookPosition;
                     break;
                 case MovementPattern.Idle:
+                    UpdateDirectionAndSpeed();
+                    break;
+                case MovementPattern.LineBreak:
+                    UpdateDirectionAndSpeed();
                     break;
                 default:
                     break;
@@ -246,6 +252,10 @@ public class FishMovement : MonoBehaviour
                 UpdateDirectionAndSpeed();
                 break;
             case MovementPattern.Idle:
+                UpdateDirectionAndSpeed();
+                break;
+            case MovementPattern.LineBreak:
+                UpdateDirectionAndSpeed();
                 break;
             default:
                 break;
@@ -315,7 +325,13 @@ public class FishMovement : MonoBehaviour
                 direction = new Vector2(0.0f, 0.0f);
                 currentSpeed = 0.0f;
                 break;
+            case MovementPattern.LineBreak:
+                direction = new Vector2(0.0f, -1.0f);
+                currentSpeed += 0.5f * Time.deltaTime;
+                break;
             case MovementPattern.Idle:
+                direction = new Vector2(0.0f, 0.0f);
+                currentSpeed = 0.0f;
                 break;
             default:
                 break;

@@ -38,7 +38,7 @@ public class Camera_Manager : MonoBehaviour
         if (moving)
             ContinueMoving();*/
 
-        TrackTo(fishingRod.hookPosition, 2.0f);
+        TrackTo(new Vector3(activeCamera.transform.position.x, fishingRod.hookPosition.y, activeCamera.transform.position.z), 2.0f);
 
         if (moving)
             ContinueMoving();
@@ -84,7 +84,13 @@ public class Camera_Manager : MonoBehaviour
         timeTotal += Time.deltaTime;
         float timePercentage = timeTotal / duration;
         float movePercentage = movementCurve.Evaluate(timePercentage);
-
+        
         activeCamera.transform.position = Vector3.Lerp(startPosition, targetPosition, movePercentage);
+        
+        // Make sure the hook doesn't go off the bottom of the screen
+        if(activeCamera.transform.position.y > targetPosition.y + 4.0f)
+        {
+            activeCamera.transform.position = new Vector3(activeCamera.transform.position.x, targetPosition.y + 4.0f, activeCamera.transform.position.z);
+        }
     }
 }

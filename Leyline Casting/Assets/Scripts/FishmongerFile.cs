@@ -92,7 +92,11 @@ public enum FishType
     Chad, // BlueFormar.png
     MagiCarp, // totally not a rip off Orange.png
     DogFish,
+<<<<<<< HEAD
     Deirdre
+=======
+    TreasureChest
+>>>>>>> origin/kevin-line
 }
 
 public static class FishmongerFile

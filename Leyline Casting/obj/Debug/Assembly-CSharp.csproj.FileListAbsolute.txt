@@ -798,3 +798,9 @@ D:\Andrew\Documents\College HW\320\leyline-casting\Leyline Casting\Temp\bin\Debu
 D:\Andrew\Documents\College HW\320\leyline-casting\Leyline Casting\Temp\bin\Debug\UnityEngine.ClusterRendererModule.xml
 D:\Andrew\Documents\College HW\320\leyline-casting\Leyline Casting\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 D:\Andrew\Documents\College HW\320\leyline-casting\Leyline Casting\obj\Debug\Assembly-CSharp.pdb
+C:\Users\Kevin\source\repos\FISHING GAAAAAAAMEEEE\Leyline Casting\Temp\bin\Debug\Unity.Timeline.Editor.pdb
+C:\Users\Kevin\source\repos\FISHING GAAAAAAAMEEEE\Leyline Casting\Temp\bin\Debug\Unity.TextMeshPro.Editor.pdb
+C:\Users\Kevin\source\repos\FISHING GAAAAAAAMEEEE\Leyline Casting\Temp\bin\Debug\Unity.Timeline.pdb
+C:\Users\Kevin\source\repos\FISHING GAAAAAAAMEEEE\Leyline Casting\Temp\bin\Debug\Unity.CollabProxy.Editor.pdb
+C:\Users\Kevin\source\repos\FISHING GAAAAAAAMEEEE\Leyline Casting\Temp\bin\Debug\Unity.TextMeshPro.pdb
+C:\Users\Kevin\source\repos\FISHING GAAAAAAAMEEEE\Leyline Casting\Temp\bin\Debug\Unity.Analytics.DataPrivacy.pdb
