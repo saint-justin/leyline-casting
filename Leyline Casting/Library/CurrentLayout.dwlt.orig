@@ -15,31 +15,20 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
 <<<<<<< HEAD
-<<<<<<< HEAD
-    x: 1920
+    x: 0
     y: 43
     width: 1920
     height: 1007
 =======
-    x: -35
-    y: 107
-    width: 1904
-    height: 969
->>>>>>> 32a2996092598f38faaa0f6c4a8b3770f2f415ae
+    x: 7.2000003
+    y: 50.4
+    width: 1521.6
+    height: 766.4
+>>>>>>> origin/Kevin-Fishing
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
   m_MinSize: {x: 950, y: 544}
-=======
-    x: 0
-    y: 43
-    width: 1920
-    height: 997
-  m_ShowMode: 4
-  m_Title: 
-  m_RootView: {fileID: 6}
-  m_MinSize: {x: 950, y: 394}
->>>>>>> origin/andrew-failed-purchase-feedback
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -61,29 +50,18 @@ MonoBehaviour:
     x: 0
     y: 30
 <<<<<<< HEAD
-<<<<<<< HEAD
     width: 1920
     height: 957
-  m_MinSize: {x: 679, y: 494}
-  m_MaxSize: {x: 14002, y: 14044}
-  vertical: 0
-  controlID: 117
-=======
-    width: 1904
-    height: 919
   m_MinSize: {x: 683, y: 344}
   m_MaxSize: {x: 12008, y: 8044}
-  vertical: 0
-  controlID: 13
->>>>>>> 32a2996092598f38faaa0f6c4a8b3770f2f415ae
 =======
-    width: 1920
-    height: 947
-  m_MinSize: {x: 679, y: 344}
-  m_MaxSize: {x: 12004, y: 8044}
+    width: 1522
+    height: 717
+  m_MinSize: {x: 685, y: 494}
+  m_MaxSize: {x: 14006, y: 14044}
+>>>>>>> origin/Kevin-Fishing
   vertical: 0
-  controlID: 45
->>>>>>> origin/andrew-failed-purchase-feedback
+  controlID: 31
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -99,26 +77,19 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1531
+    x: 1214
     y: 0
-<<<<<<< HEAD
 <<<<<<< HEAD
     width: 389
     height: 957
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
-=======
-    width: 386
-    height: 919
   m_MinSize: {x: 277, y: 72}
   m_MaxSize: {x: 4002, y: 4022}
->>>>>>> 32a2996092598f38faaa0f6c4a8b3770f2f415ae
 =======
-    width: 389
-    height: 947
+    width: 308
+    height: 717
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
->>>>>>> origin/andrew-failed-purchase-feedback
+>>>>>>> origin/Kevin-Fishing
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -142,23 +113,16 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
-<<<<<<< HEAD
     width: 379
     height: 579
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
 =======
-    width: 376
-    height: 555
+    width: 301
+    height: 433
   m_MinSize: {x: 202, y: 222}
   m_MaxSize: {x: 4002, y: 4022}
->>>>>>> 32a2996092598f38faaa0f6c4a8b3770f2f415ae
-=======
-    width: 379
-    height: 572
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
->>>>>>> origin/andrew-failed-purchase-feedback
+>>>>>>> origin/Kevin-Fishing
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -181,33 +145,25 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
-<<<<<<< HEAD
     y: 579
     width: 1531
     height: 378
+  m_MinSize: {x: 102, y: 122}
+  m_MaxSize: {x: 4002, y: 4022}
+  m_ActualView: {fileID: 18}
+=======
+    y: 433
+    width: 1214
+    height: 284
   m_MinSize: {x: 232, y: 272}
   m_MaxSize: {x: 10002, y: 10022}
   m_ActualView: {fileID: 13}
-=======
-    y: 555
-    width: 1518
-    height: 364
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-=======
-    y: 572
-    width: 1531
-    height: 375
-  m_MinSize: {x: 102, y: 122}
-  m_MaxSize: {x: 4002, y: 4022}
->>>>>>> origin/andrew-failed-purchase-feedback
-  m_ActualView: {fileID: 18}
->>>>>>> 32a2996092598f38faaa0f6c4a8b3770f2f415ae
+>>>>>>> origin/Kevin-Fishing
   m_Panes:
   - {fileID: 13}
   - {fileID: 18}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -228,9 +184,14 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1920
-    height: 997
-  m_MinSize: {x: 950, y: 394}
+    height: 1007
+=======
+    width: 1522
+    height: 767
+>>>>>>> origin/Kevin-Fishing
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &7
 MonoBehaviour:
@@ -249,7 +210,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1920
+    width: 1522
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -270,8 +231,13 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 977
+<<<<<<< HEAD
+    y: 987
     width: 1920
+=======
+    y: 747
+    width: 1522
+>>>>>>> origin/Kevin-Fishing
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -295,25 +261,18 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
-<<<<<<< HEAD
     width: 1531
     height: 957
-  m_MinSize: {x: 404, y: 494}
-  m_MaxSize: {x: 10002, y: 14044}
-=======
-    width: 1518
-    height: 919
   m_MinSize: {x: 406, y: 344}
   m_MaxSize: {x: 8006, y: 8044}
->>>>>>> 32a2996092598f38faaa0f6c4a8b3770f2f415ae
 =======
-    width: 1531
-    height: 947
-  m_MinSize: {x: 404, y: 344}
-  m_MaxSize: {x: 8004, y: 8044}
->>>>>>> origin/andrew-failed-purchase-feedback
+    width: 1214
+    height: 717
+  m_MinSize: {x: 406, y: 494}
+  m_MaxSize: {x: 10002, y: 14044}
+>>>>>>> origin/Kevin-Fishing
   vertical: 1
-  controlID: 46
+  controlID: 32
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -334,25 +293,16 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
-<<<<<<< HEAD
     width: 1531
     height: 579
-  m_MinSize: {x: 404, y: 222}
-  m_MaxSize: {x: 8004, y: 4022}
 =======
-    width: 1518
-    height: 555
+    width: 1214
+    height: 433
+>>>>>>> origin/Kevin-Fishing
   m_MinSize: {x: 406, y: 222}
   m_MaxSize: {x: 8006, y: 4022}
->>>>>>> 32a2996092598f38faaa0f6c4a8b3770f2f415ae
-=======
-    width: 1531
-    height: 572
-  m_MinSize: {x: 404, y: 222}
-  m_MaxSize: {x: 8004, y: 4022}
->>>>>>> origin/andrew-failed-purchase-feedback
   vertical: 0
-  controlID: 47
+  controlID: 33
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -368,19 +318,24 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 379
+    x: 301
     y: 0
+<<<<<<< HEAD
     width: 1152
-    height: 572
+    height: 579
+=======
+    width: 913
+    height: 433
+>>>>>>> origin/Kevin-Fishing
   m_MinSize: {x: 204, y: 222}
   m_MaxSize: {x: 4004, y: 4022}
-  m_ActualView: {fileID: 16}
+  m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 16}
   - {fileID: 17}
   - {fileID: 12}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -429,16 +384,16 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
-    x: 1920
+    x: 0
     y: 652
     width: 1531
     height: 359
 =======
-    x: 8
-    y: 648
-    width: 1518
-    height: 345
->>>>>>> 32a2996092598f38faaa0f6c4a8b3770f2f415ae
+    x: 7.2000003
+    y: 513.60004
+    width: 1214
+    height: 265
+>>>>>>> origin/Kevin-Fishing
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -458,26 +413,24 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Scripts
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: D:\Andrew\Documents\College HW\320\leyline-casting\Leyline Casting
+<<<<<<< HEAD
+  m_LastProjectPath: D:\_GIT_REPOS\Leyline Casting\Leyline Casting
+=======
+  m_LastProjectPath: C:\Users\Kevin\source\repos\FISHING GAAAAAAAMEEEE\Leyline Casting
+>>>>>>> origin/Kevin-Fishing
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
-<<<<<<< HEAD
-    m_SelectedIDs: 2e2b0000
-    m_LastClickedID: 11054
-    m_ExpandedIDs: 000000001a290000182c000000ca9a3b
+    m_SelectedIDs: 802b0000
+    m_LastClickedID: 11136
+    m_ExpandedIDs: 0000000032290000082b0000802b00009e2c000000ca9a3b
 =======
-    m_SelectedIDs: 3c2b0000
-    m_LastClickedID: 11068
-    m_ExpandedIDs: 000000002c290000262c000000ca9a3b
->>>>>>> 32a2996092598f38faaa0f6c4a8b3770f2f415ae
-=======
-    m_SelectedIDs: 2e2b0000
-    m_LastClickedID: 11054
-    m_ExpandedIDs: 000000001a290000182c000000ca9a3b
->>>>>>> origin/andrew-failed-purchase-feedback
+    m_SelectedIDs: ec2a0000
+    m_LastClickedID: 10988
+    m_ExpandedIDs: 0000000010290000ba2b000000ca9a3b
+>>>>>>> origin/Kevin-Fishing
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -506,14 +459,10 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
-<<<<<<< HEAD
-    m_ExpandedIDs: 000000001a290000182c0000
+    m_ExpandedIDs: 0000000032290000082b0000802b00009e2c0000
 =======
-    m_ExpandedIDs: 000000002c290000262c0000
->>>>>>> 32a2996092598f38faaa0f6c4a8b3770f2f415ae
-=======
-    m_ExpandedIDs: 000000001a290000182c0000
->>>>>>> origin/andrew-failed-purchase-feedback
+    m_ExpandedIDs: 0000000010290000ba2b0000
+>>>>>>> origin/Kevin-Fishing
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -538,21 +487,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: 5e260000
+    m_LastClickedInstanceID: 9822
     m_HadKeyboardFocusLastEvent: 1
-=======
-    m_SelectedInstanceIDs: dc2d0000
-    m_LastClickedInstanceID: 11740
-    m_HadKeyboardFocusLastEvent: 0
->>>>>>> 32a2996092598f38faaa0f6c4a8b3770f2f415ae
-=======
-    m_SelectedInstanceIDs: ce2d0000
-    m_LastClickedInstanceID: 11726
-    m_HadKeyboardFocusLastEvent: 1
->>>>>>> origin/andrew-failed-purchase-feedback
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -602,23 +539,16 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
-<<<<<<< HEAD
-    x: 3451
+    x: 1531
     y: 73
     width: 387
     height: 938
 =======
-    x: 1483
-    y: 137
-    width: 384
-    height: 900
->>>>>>> 32a2996092598f38faaa0f6c4a8b3770f2f415ae
-=======
-    x: 1531
-    y: 73
-    width: 387
-    height: 928
->>>>>>> origin/andrew-failed-purchase-feedback
+    x: 1221.6
+    y: 80.8
+    width: 306
+    height: 698
+>>>>>>> origin/Kevin-Fishing
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
   m_ObjectsLockedBeforeSerialization: []
@@ -652,56 +582,43 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
-<<<<<<< HEAD
-    x: 1920
+    x: 0
     y: 73
     width: 379
     height: 560
 =======
-    x: -35
-    y: 137
-    width: 376
-    height: 536
->>>>>>> 32a2996092598f38faaa0f6c4a8b3770f2f415ae
-=======
-    x: 0
-    y: 73
-    width: 379
-    height: 553
->>>>>>> origin/andrew-failed-purchase-feedback
+    x: 7.2000003
+    y: 80.8
+    width: 301
+    height: 414
+>>>>>>> origin/Kevin-Fishing
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
-<<<<<<< HEAD
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 8efbffff642c0000c42d0000
+      m_SelectedIDs: a22e0000
+      m_LastClickedID: 11938
+      m_ExpandedIDs: 8ed0fffff6faffff8efbffffd82d0000e62d0000a22e0000
 =======
-      m_SelectedIDs: 742d0000
-      m_LastClickedID: 11636
-      m_ExpandedIDs: 40fbffff722c0000
->>>>>>> 32a2996092598f38faaa0f6c4a8b3770f2f415ae
-=======
-      m_SelectedIDs: 662d0000
-      m_LastClickedID: 11622
-      m_ExpandedIDs: 8efbffff642c0000
->>>>>>> origin/andrew-failed-purchase-feedback
+      m_SelectedIDs: 582d0000
+      m_LastClickedID: 11608
+      m_ExpandedIDs: 8efbffff1e2c00008e2c0000722d0000
+>>>>>>> origin/Kevin-Fishing
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: DefaultMoneyText(Clone)
+        m_OriginalName: DefaultMoneyText(Clone)
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -12146
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -710,7 +627,7 @@ MonoBehaviour:
     m_LockTracker:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
-  m_WindowGUID: 2269576cc8331be46976a2aca3453850
+  m_WindowGUID: 1747780804a3eaf4d842fee21d6b66be
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -733,43 +650,36 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
-<<<<<<< HEAD
-    x: 2299
+    x: 379
     y: 73
     width: 1150
     height: 560
 =======
-    x: 341
-    y: 137
-    width: 1140
-    height: 536
->>>>>>> 32a2996092598f38faaa0f6c4a8b3770f2f415ae
-=======
-    x: 379
-    y: 73
-    width: 1150
-    height: 553
->>>>>>> origin/andrew-failed-purchase-feedback
+    x: 308
+    y: 80.8
+    width: 911
+    height: 414
+>>>>>>> origin/Kevin-Fishing
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
-  m_WindowGUID: 2377eef9857547a40992b160cfd6aded
+  m_WindowGUID: 1cbe846b744f4454181a7631dc867873
   m_Gizmos: 1
   m_SceneIsLit: 1
   m_SceneLighting: 1
-  m_2DMode: 1
+  m_2DMode: 0
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
 <<<<<<< HEAD
-    m_Target: {x: -11.969809, y: 382.33572, z: -317.875}
+    m_Target: {x: 0.32763723, y: 4.1848383, z: -6.763672}
     speed: 2
-    m_Value: {x: -11.969809, y: 382.33572, z: -317.875}
+    m_Value: {x: 0.32763723, y: 4.1848383, z: -6.763672}
 =======
-    m_Target: {x: 3033.0095, y: 189.41792, z: -67.691696}
+    m_Target: {x: -9.093034, y: -2.3048372, z: 8.209461}
     speed: 2
-    m_Value: {x: 3033.0095, y: 189.41792, z: -67.691696}
->>>>>>> 32a2996092598f38faaa0f6c4a8b3770f2f415ae
+    m_Value: {x: -9.093034, y: -2.3048372, z: 8.209461}
+>>>>>>> origin/Kevin-Fishing
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -790,31 +700,31 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
     yGrid:
-      m_Target: 0
-      speed: 2
-      m_Value: 0
-    zGrid:
       m_Target: 1
       speed: 2
       m_Value: 1
+    zGrid:
+      m_Target: 0
+      speed: 2
+      m_Value: 0
   m_Rotation:
-    m_Target: {x: 0, y: 0, z: 0, w: 1}
+    m_Target: {x: 0.107131906, y: 0.28852895, z: 0.03250702, w: -0.95090425}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0, w: 1}
+    m_Value: {x: 0.10713182, y: 0.2885287, z: 0.032506995, w: -0.9509035}
   m_Size:
 <<<<<<< HEAD
-    m_Target: 933.762
+    m_Target: 6.891965
     speed: 2
-    m_Value: 893.5522
+    m_Value: 6.891965
 =======
-    m_Target: 909.30457
+    m_Target: 20.893572
     speed: 2
-    m_Value: 909.30457
->>>>>>> 32a2996092598f38faaa0f6c4a8b3770f2f415ae
+    m_Value: 20.893572
+>>>>>>> origin/Kevin-Fishing
   m_Ortho:
-    m_Target: 1
+    m_Target: 0
     speed: 2
-    m_Value: 1
+    m_Value: 0
   m_CameraSettings:
     m_Speed: 1
     m_SpeedNormalized: 0.5
@@ -857,16 +767,16 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
-    x: 2299
+    x: 379
     y: 73
     width: 1150
     height: 560
 =======
-    x: 384
-    y: 93
-    width: 1140
-    height: 536
->>>>>>> 32a2996092598f38faaa0f6c4a8b3770f2f415ae
+    x: 308
+    y: 80.8
+    width: 911
+    height: 414
+>>>>>>> origin/Kevin-Fishing
   m_ViewDataDictionary: {fileID: 0}
   m_VSyncEnabled: 0
   m_MaximizeOnPlay: 0
@@ -879,10 +789,17 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -146
-    m_HBaseRangeMax: 146
-    m_VBaseRangeMin: -259.5
-    m_VBaseRangeMax: 259.5
+<<<<<<< HEAD
+    m_HBaseRangeMin: -152.5
+    m_HBaseRangeMax: 152.5
+    m_VBaseRangeMin: -271.5
+    m_VBaseRangeMax: 271.5
+=======
+    m_HBaseRangeMin: -455.5
+    m_HBaseRangeMax: 455.5
+    m_VBaseRangeMin: -198.5
+    m_VBaseRangeMax: 198.5
+>>>>>>> origin/Kevin-Fishing
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -900,25 +817,43 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 17
-      width: 1140
-      height: 519
+<<<<<<< HEAD
+      width: 1150
+      height: 543
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 570, y: 259.5}
+    m_Translation: {x: 575, y: 271.5}
+=======
+      width: 911
+      height: 397
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 455.5, y: 198.5}
+>>>>>>> origin/Kevin-Fishing
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -570
-      y: -259.5
-      width: 1140
-      height: 519
+<<<<<<< HEAD
+      x: -575
+      y: -271.5
+      width: 1150
+      height: 543
+=======
+      x: -455.5
+      y: -198.5
+      width: 911
+      height: 397
+>>>>>>> origin/Kevin-Fishing
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
-  m_LastWindowPixelSize: {x: 1140, y: 536}
+<<<<<<< HEAD
+  m_LastWindowPixelSize: {x: 1150, y: 560}
+=======
+  m_LastWindowPixelSize: {x: 1138.75, y: 517.5}
+>>>>>>> origin/Kevin-Fishing
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000001000100000100
@@ -944,22 +879,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-    x: 1920
+    x: 0
     y: 652
     width: 1531
     height: 359
-=======
-    x: -35
-    y: 692
-    width: 1518
-    height: 345
->>>>>>> 32a2996092598f38faaa0f6c4a8b3770f2f415ae
-=======
-    x: 0
-    y: 645
-    width: 1531
-    height: 356
->>>>>>> origin/andrew-failed-purchase-feedback
   m_ViewDataDictionary: {fileID: 0}
