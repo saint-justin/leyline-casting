@@ -18,9 +18,12 @@ EditorBuildSettings:
     path: Assets/Scenes/FishmongerFile.unity
     guid: ff961de8e1d5ad24bb88cf8b2a572033
   - enabled: 1
+<<<<<<< HEAD
     path: Assets/Scenes/Credits.unity
     guid: 97fa63df77eed57428d57e3351327d8b
   - enabled: 1
+=======
+>>>>>>> origin/andrew-fishmonger-backend
     path: Assets/Scenes/Fish_Variant_Spawning.unity
     guid: 457086d13a8ec774a9aeb17a1be55de3
   m_configObjects: {}
