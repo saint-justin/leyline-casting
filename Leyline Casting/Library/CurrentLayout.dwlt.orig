@@ -19,16 +19,20 @@ MonoBehaviour:
     y: 43
     width: 1920
     height: 1007
-=======
-    x: 7.2000003
-    y: 50.4
-    width: 1521.6
-    height: 766.4
->>>>>>> origin/Kevin-Fishing
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 950, y: 544}
+  m_MinSize: {x: 950, y: 300}
+=======
+    x: 1928
+    y: 51
+    width: 1904
+    height: 981
+  m_ShowMode: 4
+  m_Title: 
+  m_RootView: {fileID: 6}
+  m_MinSize: {x: 950, y: 394}
+>>>>>>> origin/andrew-fishmonger-backend
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -49,19 +53,16 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-<<<<<<< HEAD
-    width: 1920
-    height: 957
-  m_MinSize: {x: 683, y: 344}
-  m_MaxSize: {x: 12008, y: 8044}
-=======
-    width: 1522
-    height: 717
-  m_MinSize: {x: 685, y: 494}
-  m_MaxSize: {x: 14006, y: 14044}
->>>>>>> origin/Kevin-Fishing
+    width: 1904
+    height: 931
+  m_MinSize: {x: 681, y: 344}
+  m_MaxSize: {x: 12006, y: 8044}
   vertical: 0
-  controlID: 31
+<<<<<<< HEAD
+  controlID: 99
+=======
+  controlID: 84
+>>>>>>> origin/andrew-fishmonger-backend
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -77,19 +78,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1214
+    x: 1518
     y: 0
-<<<<<<< HEAD
-    width: 389
-    height: 957
-  m_MinSize: {x: 277, y: 72}
-  m_MaxSize: {x: 4002, y: 4022}
-=======
-    width: 308
-    height: 717
+    width: 386
+    height: 931
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
->>>>>>> origin/Kevin-Fishing
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -112,17 +106,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
-    width: 379
-    height: 579
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-=======
-    width: 301
-    height: 433
+    width: 376
+    height: 589
   m_MinSize: {x: 202, y: 222}
   m_MaxSize: {x: 4002, y: 4022}
->>>>>>> origin/Kevin-Fishing
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -144,21 +131,12 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
-    y: 579
-    width: 1531
-    height: 378
+    y: 589
+    width: 1518
+    height: 342
   m_MinSize: {x: 102, y: 122}
   m_MaxSize: {x: 4002, y: 4022}
   m_ActualView: {fileID: 18}
-=======
-    y: 433
-    width: 1214
-    height: 284
-  m_MinSize: {x: 232, y: 272}
-  m_MaxSize: {x: 10002, y: 10022}
-  m_ActualView: {fileID: 13}
->>>>>>> origin/Kevin-Fishing
   m_Panes:
   - {fileID: 13}
   - {fileID: 18}
@@ -188,9 +166,9 @@ MonoBehaviour:
     width: 1920
     height: 1007
 =======
-    width: 1522
-    height: 767
->>>>>>> origin/Kevin-Fishing
+    width: 1904
+    height: 981
+>>>>>>> origin/andrew-fishmonger-backend
   m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &7
@@ -210,7 +188,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1522
+    width: 1904
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -231,13 +209,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
-    y: 987
-    width: 1920
-=======
-    y: 747
-    width: 1522
->>>>>>> origin/Kevin-Fishing
+    y: 961
+    width: 1904
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -260,19 +233,16 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
-    width: 1531
-    height: 957
+    width: 1518
+    height: 931
   m_MinSize: {x: 406, y: 344}
   m_MaxSize: {x: 8006, y: 8044}
-=======
-    width: 1214
-    height: 717
-  m_MinSize: {x: 406, y: 494}
-  m_MaxSize: {x: 10002, y: 14044}
->>>>>>> origin/Kevin-Fishing
   vertical: 1
-  controlID: 32
+<<<<<<< HEAD
+  controlID: 34
+=======
+  controlID: 85
+>>>>>>> origin/andrew-fishmonger-backend
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -292,17 +262,16 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
-    width: 1531
-    height: 579
-=======
-    width: 1214
-    height: 433
->>>>>>> origin/Kevin-Fishing
+    width: 1518
+    height: 589
   m_MinSize: {x: 406, y: 222}
   m_MaxSize: {x: 8006, y: 4022}
   vertical: 0
-  controlID: 33
+<<<<<<< HEAD
+  controlID: 35
+=======
+  controlID: 86
+>>>>>>> origin/andrew-fishmonger-backend
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -318,24 +287,19 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 301
+    x: 376
     y: 0
-<<<<<<< HEAD
-    width: 1152
-    height: 579
-=======
-    width: 913
-    height: 433
->>>>>>> origin/Kevin-Fishing
+    width: 1142
+    height: 589
   m_MinSize: {x: 204, y: 222}
   m_MaxSize: {x: 4004, y: 4022}
-  m_ActualView: {fileID: 17}
+  m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
   - {fileID: 17}
   - {fileID: 12}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -389,11 +353,11 @@ MonoBehaviour:
     width: 1531
     height: 359
 =======
-    x: 7.2000003
-    y: 513.60004
-    width: 1214
-    height: 265
->>>>>>> origin/Kevin-Fishing
+    x: 1928
+    y: 670
+    width: 1518
+    height: 323
+>>>>>>> origin/andrew-fishmonger-backend
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -407,46 +371,42 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
-<<<<<<< HEAD
-  m_LastProjectPath: D:\_GIT_REPOS\Leyline Casting\Leyline Casting
-=======
-  m_LastProjectPath: C:\Users\Kevin\source\repos\FISHING GAAAAAAAMEEEE\Leyline Casting
->>>>>>> origin/Kevin-Fishing
+  m_LastProjectPath: D:\Andrew\Documents\College HW\320\leyline-casting\Leyline Casting
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
-    m_SelectedIDs: 802b0000
-    m_LastClickedID: 11136
-    m_ExpandedIDs: 0000000032290000082b0000802b00009e2c000000ca9a3b
+    m_SelectedIDs: 202a0000
+    m_LastClickedID: 10784
+    m_ExpandedIDs: 00000000442900001c2b0000942b0000b22c000000ca9a3b
 =======
-    m_SelectedIDs: ec2a0000
-    m_LastClickedID: 10988
-    m_ExpandedIDs: 0000000010290000ba2b000000ca9a3b
->>>>>>> origin/Kevin-Fishing
+    m_SelectedIDs: 6e2f0000
+    m_LastClickedID: 12142
+    m_ExpandedIDs: 00000000d42e00002c300000903000006631000000ca9a3b
+>>>>>>> origin/andrew-fishmonger-backend
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Scenes
+      m_OriginalName: Scenes
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 12142
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 5}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -459,10 +419,10 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
-    m_ExpandedIDs: 0000000032290000082b0000802b00009e2c0000
+    m_ExpandedIDs: 00000000442900001c2b0000942b0000b22c0000
 =======
-    m_ExpandedIDs: 0000000010290000ba2b0000
->>>>>>> origin/Kevin-Fishing
+    m_ExpandedIDs: 00000000d42e00002c3000009030000066310000
+>>>>>>> origin/andrew-fishmonger-backend
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -487,10 +447,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 5e260000
-    m_LastClickedInstanceID: 9822
+    m_SelectedInstanceIDs: 1482ffff
+    m_LastClickedInstanceID: -32236
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000
+    m_ExpandedInstanceIDs: c6230000142d0000f02d000056300000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -544,11 +504,11 @@ MonoBehaviour:
     width: 387
     height: 938
 =======
-    x: 1221.6
-    y: 80.8
-    width: 306
-    height: 698
->>>>>>> origin/Kevin-Fishing
+    x: 3446
+    y: 81
+    width: 384
+    height: 912
+>>>>>>> origin/andrew-fishmonger-backend
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
   m_ObjectsLockedBeforeSerialization: []
@@ -587,47 +547,47 @@ MonoBehaviour:
     width: 379
     height: 560
 =======
-    x: 7.2000003
-    y: 80.8
-    width: 301
-    height: 414
->>>>>>> origin/Kevin-Fishing
+    x: 1928
+    y: 81
+    width: 376
+    height: 570
+>>>>>>> origin/andrew-fishmonger-backend
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
-      m_SelectedIDs: a22e0000
-      m_LastClickedID: 11938
-      m_ExpandedIDs: 8ed0fffff6faffff8efbffffd82d0000e62d0000a22e0000
+      m_SelectedIDs: a6290000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 9ef9ffff02faffff50faffff7afbffff
 =======
-      m_SelectedIDs: 582d0000
-      m_LastClickedID: 11608
-      m_ExpandedIDs: 8efbffff1e2c00008e2c0000722d0000
->>>>>>> origin/Kevin-Fishing
+      m_SelectedIDs: 2a650000
+      m_LastClickedID: 0
+      m_ExpandedIDs: a87affffc482ffffd688ffff7694ffff3298ffff68f6ffff86310000a8310000be31000098500000ca580000fa5800002a590000c25a0000
+>>>>>>> origin/andrew-fishmonger-backend
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: DefaultMoneyText(Clone)
-        m_OriginalName: DefaultMoneyText(Clone)
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -12146
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 4}
+        m_ClientGUIView: {fileID: 0}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
     m_LockTracker:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
-  m_WindowGUID: 1747780804a3eaf4d842fee21d6b66be
+  m_WindowGUID: 6e0a223205460f045a16ee507ca691b8
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -655,31 +615,31 @@ MonoBehaviour:
     width: 1150
     height: 560
 =======
-    x: 308
-    y: 80.8
-    width: 911
-    height: 414
->>>>>>> origin/Kevin-Fishing
+    x: 2304
+    y: 81
+    width: 1140
+    height: 570
+>>>>>>> origin/andrew-fishmonger-backend
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
-  m_WindowGUID: 1cbe846b744f4454181a7631dc867873
+  m_WindowGUID: 449b1c4049ba9224b92b093ca483c22a
   m_Gizmos: 1
   m_SceneIsLit: 1
   m_SceneLighting: 1
-  m_2DMode: 0
+  m_2DMode: 1
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
 <<<<<<< HEAD
-    m_Target: {x: 0.32763723, y: 4.1848383, z: -6.763672}
+    m_Target: {x: 1.9848131, y: 0.59015036, z: -0.93359375}
     speed: 2
-    m_Value: {x: 0.32763723, y: 4.1848383, z: -6.763672}
+    m_Value: {x: 1.9848131, y: 0.59015036, z: -0.93359375}
 =======
-    m_Target: {x: -9.093034, y: -2.3048372, z: 8.209461}
+    m_Target: {x: 172.08522, y: 238.11371, z: -301.875}
     speed: 2
-    m_Value: {x: -9.093034, y: -2.3048372, z: 8.209461}
->>>>>>> origin/Kevin-Fishing
+    m_Value: {x: 172.08522, y: 238.11371, z: -301.875}
+>>>>>>> origin/andrew-fishmonger-backend
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -700,31 +660,31 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
     yGrid:
-      m_Target: 1
-      speed: 2
-      m_Value: 1
-    zGrid:
       m_Target: 0
       speed: 2
       m_Value: 0
+    zGrid:
+      m_Target: 1
+      speed: 2
+      m_Value: 1
   m_Rotation:
-    m_Target: {x: 0.107131906, y: 0.28852895, z: 0.03250702, w: -0.95090425}
+    m_Target: {x: 0, y: 0, z: 0, w: 1}
     speed: 2
-    m_Value: {x: 0.10713182, y: 0.2885287, z: 0.032506995, w: -0.9509035}
+    m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
 <<<<<<< HEAD
-    m_Target: 6.891965
+    m_Target: 19.352823
     speed: 2
-    m_Value: 6.891965
+    m_Value: 19.352823
 =======
-    m_Target: 20.893572
+    m_Target: 663.1222
     speed: 2
-    m_Value: 20.893572
->>>>>>> origin/Kevin-Fishing
+    m_Value: 694.3688
+>>>>>>> origin/andrew-fishmonger-backend
   m_Ortho:
-    m_Target: 0
+    m_Target: 1
     speed: 2
-    m_Value: 0
+    m_Value: 1
   m_CameraSettings:
     m_Speed: 1
     m_SpeedNormalized: 0.5
@@ -738,7 +698,11 @@ MonoBehaviour:
     m_DynamicClip: 1
     m_OcclusionCulling: 0
   m_ShowGlobalGrid: 1
+<<<<<<< HEAD
   m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+=======
+  m_LastSceneViewRotation: {x: -0.26697037, y: -0.101824574, z: 0.028379051, w: -0.9578909}
+>>>>>>> origin/andrew-fishmonger-backend
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -772,17 +736,17 @@ MonoBehaviour:
     width: 1150
     height: 560
 =======
-    x: 308
-    y: 80.8
-    width: 911
-    height: 414
->>>>>>> origin/Kevin-Fishing
+    x: 2304
+    y: 81
+    width: 1140
+    height: 570
+>>>>>>> origin/andrew-fishmonger-backend
   m_ViewDataDictionary: {fileID: 0}
   m_VSyncEnabled: 0
   m_MaximizeOnPlay: 0
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 0000000000000000000000000d000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_TargetDisplay: 0
   m_ZoomArea:
     m_HRangeLocked: 0
@@ -790,16 +754,16 @@ MonoBehaviour:
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
 <<<<<<< HEAD
-    m_HBaseRangeMin: -152.5
-    m_HBaseRangeMax: 152.5
+    m_HBaseRangeMin: -575
+    m_HBaseRangeMax: 575
     m_VBaseRangeMin: -271.5
     m_VBaseRangeMax: 271.5
 =======
-    m_HBaseRangeMin: -455.5
-    m_HBaseRangeMax: 455.5
-    m_VBaseRangeMin: -198.5
-    m_VBaseRangeMax: 198.5
->>>>>>> origin/Kevin-Fishing
+    m_HBaseRangeMin: -155.5
+    m_HBaseRangeMax: 155.5
+    m_VBaseRangeMin: -276.5
+    m_VBaseRangeMax: 276.5
+>>>>>>> origin/andrew-fishmonger-backend
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -817,46 +781,28 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 17
-<<<<<<< HEAD
-      width: 1150
-      height: 543
+      width: 1140
+      height: 553
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 575, y: 271.5}
-=======
-      width: 911
-      height: 397
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 455.5, y: 198.5}
->>>>>>> origin/Kevin-Fishing
+    m_Translation: {x: 570, y: 276.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-<<<<<<< HEAD
-      x: -575
-      y: -271.5
-      width: 1150
-      height: 543
-=======
-      x: -455.5
-      y: -198.5
-      width: 911
-      height: 397
->>>>>>> origin/Kevin-Fishing
+      x: -570
+      y: -276.5
+      width: 1140
+      height: 553
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
-<<<<<<< HEAD
-  m_LastWindowPixelSize: {x: 1150, y: 560}
-=======
-  m_LastWindowPixelSize: {x: 1138.75, y: 517.5}
->>>>>>> origin/Kevin-Fishing
+  m_LastWindowPixelSize: {x: 1140, y: 570}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
-  m_LowResolutionForAspectRatios: 01000001000100000100
+  m_LowResolutionForAspectRatios: 01000000000100000100
   m_XRRenderMode: 0
 --- !u!114 &18
 MonoBehaviour:
@@ -879,8 +825,15 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 0
     y: 652
     width: 1531
     height: 359
+=======
+    x: 1928
+    y: 670
+    width: 1518
+    height: 323
+>>>>>>> origin/andrew-fishmonger-backend
   m_ViewDataDictionary: {fileID: 0}
