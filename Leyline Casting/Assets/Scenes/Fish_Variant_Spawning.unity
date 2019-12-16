@@ -3367,6 +3367,7 @@ MonoBehaviour:
   lureRadius: 0
   finiteState: 0
   oceanFish: []
+  vfxMachine: {fileID: 353489390}
 --- !u!1 &1532834872
 GameObject:
   m_ObjectHideFlags: 0
@@ -3545,10 +3546,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Particles_Money
       objectReference: {fileID: 0}
+    - target: {fileID: 6750994245928997900, guid: 185100158f871c344ad1f5aee2a6935b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6750994245928998001, guid: 185100158f871c344ad1f5aee2a6935b,
         type: 3}
       propertyPath: playOnAwake
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6750994245928998001, guid: 185100158f871c344ad1f5aee2a6935b,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.9056604
+      objectReference: {fileID: 0}
+    - target: {fileID: 6750994245928998001, guid: 185100158f871c344ad1f5aee2a6935b,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.7396773
+      objectReference: {fileID: 0}
+    - target: {fileID: 6750994245928998001, guid: 185100158f871c344ad1f5aee2a6935b,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.46564615
       objectReference: {fileID: 0}
     - target: {fileID: 6750994245928998003, guid: 185100158f871c344ad1f5aee2a6935b,
         type: 3}

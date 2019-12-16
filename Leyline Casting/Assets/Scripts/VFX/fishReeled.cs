@@ -13,7 +13,7 @@ public class fishReeled : MonoBehaviour
     private Queue<float> objectDeaths;
 
     private bool running = false;           // Whether or not the script is currently running
-    private float floatingSpeed = 2.0f;     // Speed at which the text rises
+    private float floatingSpeed = 0.50f;     // Speed at which the text rises
     private float lifeTime = 1.0f;          // Lifetime of each text object
 
     void Start()
@@ -26,12 +26,14 @@ public class fishReeled : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
         if (Input.GetKeyDown(KeyCode.O))
         {
             Begin("200", new Vector3(0, 0, 0));
             Debug.Log(Time.time);
             Debug.Log(Time.time + lifeTime);
         }
+        */
 
         if (running)
         {
@@ -49,12 +51,12 @@ public class fishReeled : MonoBehaviour
         GameObject tempSystem = particles;
 
         GameObject instantiatedObject = Instantiate(moneyText, this.transform);
-        GameObject instantiatedSystem = Instantiate(particles, instantiatedObject.transform);
+        Instantiate(particles, instantiatedObject.transform);
 
-        Debug.Log(instantiatedObject);
 
         instantiatedObjects.Add(instantiatedObject);
         destructionQueue.Enqueue(instantiatedObject);
+
 
         Invoke("DestroyObject", lifeTime);
 
@@ -72,10 +74,10 @@ public class fishReeled : MonoBehaviour
         for(int i=0; i<instantiatedObjects.Count; i++)
         {
             // Update the position of the object if it's still got time
-            Vector3 pos = instantiatedObjects[i].transform.position;
+            Vector3 pos = instantiatedObjects[i].transform.localPosition;
             pos.y += floatingSpeed;
-            pos.x += Mathf.Sin(Time.deltaTime);
-            instantiatedObjects[i].transform.position = pos;
+            pos.x += Mathf.Sin(Time.time * 4.0f) / 4.0f;
+            instantiatedObjects[i].transform.localPosition = pos;
         }
     }
 

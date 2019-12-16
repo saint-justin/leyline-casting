@@ -27,6 +27,8 @@ public class FishingRod : MonoBehaviour
     public List<GameObject> oceanFish; // List of all fish in the sea that aren't on the fishing line
     private List<GameObject> hookedFish; // List of all fish attached to the hook
 
+    public GameObject vfxMachine;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -112,6 +114,9 @@ public class FishingRod : MonoBehaviour
                         FishMovement fishComp = fish.GetComponent<FishMovement>();
                         fishComp.goldManager.ReturnGoldByWeight(fish.GetComponent<Fish>().type, fishComp.fishWeight);
                         Destroy(fish);
+                        vfxMachine.GetComponent<fishReeled>().Begin("", new Vector3(0.0f, 0.0f, 0.0f));
+                        //WaitForSeconds (0.1f);
+
                     }
                     hookedFish.Clear();
 
