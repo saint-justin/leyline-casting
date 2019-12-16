@@ -285,7 +285,7 @@ GameObject:
   - component: {fileID: 165924389}
   - component: {fileID: 165924388}
   m_Layer: 5
-  m_Name: reel_sprite
+  m_Name: rod_sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1570,7 +1570,7 @@ GameObject:
   - component: {fileID: 675018325}
   - component: {fileID: 675018327}
   m_Layer: 5
-  m_Name: Pole
+  m_Name: Lure
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1677,7 +1677,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 675018325}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8924439}
+        m_MethodName: AttemptPurchase
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!1 &718468812
@@ -2118,7 +2129,7 @@ GameObject:
   - component: {fileID: 883301281}
   - component: {fileID: 883301280}
   m_Layer: 5
-  m_Name: reel_text
+  m_Name: lure_text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2894,7 +2905,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1287386783}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8924439}
+        m_MethodName: AttemptPurchase
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!1 &1302560796
@@ -2983,7 +3005,7 @@ GameObject:
   - component: {fileID: 1319809279}
   - component: {fileID: 1319809278}
   m_Layer: 5
-  m_Name: reel_text
+  m_Name: rod_text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3065,7 +3087,7 @@ GameObject:
   - component: {fileID: 1368666064}
   - component: {fileID: 1368666066}
   m_Layer: 5
-  m_Name: Reel
+  m_Name: Rod
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3172,7 +3194,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1368666064}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8924439}
+        m_MethodName: AttemptPurchase
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!1 &1531757635
@@ -3889,7 +3922,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1772089864}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8924439}
+        m_MethodName: AttemptPurchase
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!1 &1772846451
@@ -4420,7 +4464,7 @@ GameObject:
   - component: {fileID: 1878039951}
   - component: {fileID: 1878039950}
   m_Layer: 5
-  m_Name: reel_sprite
+  m_Name: lure_sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
