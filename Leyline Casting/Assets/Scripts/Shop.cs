@@ -133,13 +133,14 @@ public class Shop : MonoBehaviour
     private FishingRod fishingRod;
 
     // game object costs
-    public GameObject rodCost;
-    public GameObject lineCost;
-    public GameObject hookCost;
-    public GameObject lureCost;
+    public GameObject rodButton;
+    public GameObject lineButton;
+    public GameObject hookButton;
+    public GameObject lureButton;
 
     // text component references
     private Text goldAmt;
+    private Button[] upgradeButtons;
     private Text[] upgradeCosts;
 
     // Start is called before the first frame update
@@ -149,11 +150,21 @@ public class Shop : MonoBehaviour
         fishingRod = fishingRodObject.GetComponent<FishingRod>();
 
         goldAmt = GameObject.Find("Current Gold").GetComponent<Text>();
-        upgradeCosts = new Text[]{
-            rodCost.GetComponent<Text>(),
-            lineCost.GetComponent<Text>(),
-            hookCost.GetComponent<Text>(),
-            lureCost.GetComponent<Text>()
+
+        upgradeButtons = new Button[]
+        {
+            rodButton.GetComponent<Button>(),
+            lineButton.GetComponent<Button>(),
+            hookButton.GetComponent<Button>(),
+            lureButton.GetComponent<Button>()
+        };
+
+        upgradeCosts = new Text[]
+        {
+            rodButton.transform.Find("cost").GetComponent<Text>(),
+            lineButton.transform.Find("cost").GetComponent<Text>(),
+            hookButton.transform.Find("cost").GetComponent<Text>(),
+            lureButton.transform.Find("cost").GetComponent<Text>()
         };
 
         for(int i = 0; i < upgradeCosts.Length; i++)
@@ -168,6 +179,27 @@ public class Shop : MonoBehaviour
     {
         // might be updating this more than it needs to by having this in update
         goldAmt.text = $"Gold: ${goldManager.gold}";
+
+        for(int i = 0; i < upgradeIndices.Length; i++)
+        {
+            // check if there are anymore upgrades left
+            // might want to move some of this into SetUpgrade if 
+            // # of upgrades per obj becomes variable
+            if (upgradeIndices[i] >= UpgradeLevels.GetUpgradesLength((UpgradeLevels.Types)i))
+                upgradeButtons[i].interactable = false;
+            // player/gold manager check if there's enough money for the next upgrade
+            // if money is less than value, do nothing
+            else if (goldManager.gold < UpgradeLevels.GetUpgrade((UpgradeLevels.Types)i, upgradeIndices[i]).cost)
+            {
+                upgradeButtons[i].interactable = false;
+                upgradeCosts[i].color = Color.red;
+            }
+            else
+            {
+                upgradeButtons[i].interactable = true;
+                upgradeCosts[i].color = Color.white;
+            }
+        }
     }
 
     /// <summary>
